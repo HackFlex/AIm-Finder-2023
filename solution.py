@@ -54,7 +54,7 @@ def solve(input_file, search_text) -> None:
                 # break
         
         answer = get_answer_object()
-        answer['xPath'] = full_path
+        answer['xPath'] = full_path + '/text'
         answer['name'] = anamnesis
         answer['end'] = len(anamnesis)
 
