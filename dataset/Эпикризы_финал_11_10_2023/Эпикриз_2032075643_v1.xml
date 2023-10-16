@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="DischSum.xsl"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+ <!-- ЗАГОЛОВОК ДОКУМЕНТА "Шаблон документа - xmlAIDoc"-->
+ <!-- Построен на основании Приказа МЗ РФ от 5 августа 2022 г. N530н, СЭД.Эпикриз_в_стационаре_выписной, СЭД.Эпикриз_по_законченному_случаю_амбулаторный-->
+ <!-- R [1..] Требуемый элемент. Элемент обязан иметь непустое наполнение, nullFlavor не разрешён -->
+ <!-- [1..] Обязательный элемент. Элемент обязан присутствовать, но может иметь пустое наполнение с указанием причины отсутствия информации через nullFlavor -->
+ <!-- [0..] Не обязательный элемент. Элемент может отсутствовать -->
+ <!-- R [1..1] Область применения документа (Страна) -->
+ <realmCode code="RU"/>
+ <!-- R [1..1] Указатель на использование CDA R2 -->
+ <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+ <!-- R [1..1] Идентификатор Шаблона документа "xmlAIDoc" -->
+ <!-- R [1..1] Уникальный идентификатор документа (не присвоен)-->
+ <!-- Сеченовский Университет 
+  OID: 1.2.643.5.1.13.13.12.2.77.8510
+  ИЦМ: 100.100.100.1
+  UID: 10001-уникальный идентификатор документа в ИЦМ -->
+ <id extension="10001" root="1.2.643.5.1.13.13.12.2.77.8510.100.100.100.1"/>
+ <!-- R [1..1] Тип документа -->
+ <!-- Специализированного документа в реестре видов медицинской документации нет -->
+ <!-- Документ построен на основании СМЭД "Эпикриз в стационаре выписной", "Эпикриз по законченному случаю" и данных ИЭМК определенных Приказа МЗ РФ от 5 августа 2022 г. N530Н-->
+ <!--  Тип документа -->
+ <code code="10000" codeSystem="1.2.643.5.1.13.13.11.1115" codeSystemName="Система электронных медицинских документов" codeSystemVersion="2.2" displayName="xml_AIDoctor"/>
+ <!-- Код не присвоен, code="10000" указан произвольно -->
+ <!-- R [1..1] Заголовок документа -->
+ <title>
+  выписной эпикриз
+ </title>
+ <!-- R [1..1] Дата создания документа -->
+ <effectiveTime value="20230102"/>
+ <!-- R [1..1] Уровень конфиденциальности медицинского документа -->
+ <confidentialityCode code="N" codeSystem="1.2.643.5.1.13.13.11.1116" codeSystemName="Уровень конфиденциальности медицинского документа" codeSystemVersion="1.1" displayName="обычный"/>
+ <!-- R [1..1] Язык документа -->
+ <languageCode code="ru-RU"/>
+ <!-- R [1..1] Кодовый номер версии документа -->
+ <!-- 1 - полный -->
+ <!-- 2 - без секции диагнозов секция исследования и консультации полностью  -->
+ <!-- 3 - без секции диагнозов, секция исследования и консультации частична  -->
+ <versionNumber value="3"/>
+ <!-- R [1..1] ДАННЫЕ: ПАЦИЕНТ -->
+ <recordTarget>
+  <!-- R [1..1] ПАЦИЕНТ -->
+  <patientRole>
+   <!-- [1..1] Документ, удостоверяющий личность пациента, серия, номер, кем выдан. -->
+   <!-- <id root="1.2.643.5.1.13.13.11.1011.1" extension="1111 000001" assigningAuthorityName='ОВД "Отдельное" ОУФМС России по гор. Москве. Код подразделения: 777-777. Дата выдачи: 11.02.2005'/> -->
+   <id assigningAuthorityName="Данные скрыты" extension="Данные скрыты" root="1.2.643.5.1.13.13.11.1011.1"/>
+   <patient>
+    <!-- R [1..1] ФИО пациента -->
+    <name>
+     <!-- R [1..1] Фамилия -->
+     <family>
+      Фамилия
+     </family>
+     <!-- R [1..1] Имя -->
+     <given>
+      Имя
+     </given>
+     <!-- [1..1] Отчество -->
+     <given>
+      Отчество  -  скрыты
+     </given>
+    </name>
+    <!-- R [1..1] Пол пациента -->
+    <administrativeGenderCode code="1" codeSystem="1.2.643.5.1.13.13.11.1040" codeSystemName="Пол пациента" codeSystemVersion="2.1" displayName="Мужской"/>
+    <!-- R [1..1] Дата рождения -->
+    <birthTime value="19760803"/>
+   </patient>
+   <!-- R [1..1] Организация, сформировавшая электронный документ -->
+   <providerOrganization>
+    <id root="1.2.643.5.1.13.13.12.2.77.8510"/>
+    <name>
+     ФГАОУ ВО Первый МГМУ им. И.М.Сеченова Минздрава России (Сеченовский Университет)
+    </name>
+    <telecom value="email:sechenov@mail.ru"/>
+    <telecom value="http://sechenov.ru"/>
+    <addr>
+     <streetAddressLine>
+      г. Москва, ул Трубецкая, д. 8, к. 2
+     </streetAddressLine>
+     <state>
+      г. Москва
+     </state>
+    </addr>
+   </providerOrganization>
+  </patientRole>
+ </recordTarget>
+ <!-- R [1..1] ДАННЫЕ: АВТОР ДОКУМЕНТА -->
+ <!-- R [1..1] ДАННЫЕ: ОБ ОРГАНИЗАЦИИ-СОЗДАТЕЛЕ ДОКУМЕНТА -->
+ <author>
+  <time/>
+  <assignedAuthor>
+   <id/>
+  </assignedAuthor>
+ </author>
+ <custodian>
+  <!-- R [1..1] Организация-владелец документа (роль) -->
+  <assignedCustodian>
+   <!-- R [1..1] Организация-владелец документа (организация) -->
+   <representedCustodianOrganization>
+    <id root="1.2.643.5.1.13.13.12.2.77.8510"/>
+    <name>
+     ФГАОУ ВО Первый МГМУ им. И.М.Сеченова Минздрава России (Сеченовский Университет)
+    </name>
+    <addr>
+     <streetAddressLine>
+      г. Москва, ул Трубецкая, д. 8, к. 2
+     </streetAddressLine>
+     <state>
+      г. Москва
+     </state>
+    </addr>
+   </representedCustodianOrganization>
+  </assignedCustodian>
+ </custodian>
+ <!-- R [1..1] ДАННЫЕ: О ПОЛУЧАТЕЛЕ ДОКУМЕНТА - ИЭМК \ МЗ РФ-->
+ <!-- R [1..1] ТЕЛО ДОКУМЕНТА -->
+ <component>
+  <!-- R [1..1] СТРУКТУРИРОВАННОЕ ТЕЛО ДОКУМЕНТА -->
+  <structuredBody>
+   <!-- R [1..1] СЕКЦИЯ_1: МЕДИЦИНСКИЕ ДАННЫЕ ПАЦИЕНТА  -->
+   <!-- R [1..1] СЕКЦИЯ_2 (ИЭМК): ЖАЛОБЫ ПЕРВИЧНЫЙ ОСМОТР  -->
+   <component>
+    <section>
+     <!-- R [1..1] ЖАЛОБЫ ПЕРВИЧНОГО ОСМОТРА -->
+     <code code="COMPLNTS" codeSystem="1.2.643.5.1.13.13.99.2.197" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="3.7" displayName="Жалобы"/>
+     <!-- R [1..1] ЖАЛОБЫ ПРИ ПОСТУПЛЕНИИ -->
+     <title>
+      ЖАЛОБЫ ПРИ ПОСТУПЛЕНИИ
+     </title>
+     <!-- R [1..1] наполнение секции -->
+     <text>
+      СостояниеЖ Средней тяжести.
+      <br/>
+      <br/>
+      Жалобы: на слабость, избыточный вес, сухость во рту, повышение гликемии в течение суток до 16 ммоль/л, повышение АД до 160/100 мм рт ст
+     </text>
+     <!-- R [1..1] кодирование состояния при поступлении -->
+     <entry>
+      <observation classCode="OBS" moodCode="EVN">
+       <code code="804" codeSystem="1.2.643.5.1.13.13.99.2.166" codeSystemName="Кодируемые поля CDA документов" codeSystemVersion="1.49" displayName="Состояние пациента"/>
+       <value code="2" codeSystem="1.2.643.5.1.13.13.11.1006" codeSystemName="Степень тяжести состояния пациента" codeSystemVersion="2.1" displayName="Средней тяжести" xsi:type="CD"/>
+      </observation>
+     </entry>
+     <entry>
+      <observation classCode="OBS" moodCode="EVN">
+       <code code="835" codeSystem="1.2.643.5.1.13.13.99.2.166" codeSystemName="Кодируемые поля CDA документов" codeSystemVersion="1.49" displayName="Жалобы пациента"/>
+       <value xsi:type="ST">
+        на слабость, избыточный вес, сухость во рту, повышение гликемии в течение суток до 16 ммоль/л, повышение АД до 160/100 мм рт ст
+       </value>
+      </observation>
+     </entry>
+    </section>
+   </component>
+   <!-- [0..1] СЕКЦИЯ_3: СОЦИАЛЬНЫЙ АНАМНЕЗ -->
+   <component>
+    <section>
+     <!-- R [1..1] код секции -->
+     <code code="SOCANAM" codeSystem="1.2.643.5.1.13.13.11.1379" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="1.2" displayName="Социальный анамнез"/>
+     <!-- R [1..1] заголовок секции -->
+     <title>
+      СОЦИАЛЬНЫЙ АНАМНЕЗ
+     </title>
+     <!-- R [1..1] наполнение секции -->
+     <text>
+      <list listType="unordered">
+       <caption>
+        Занятость
+       </caption>
+       <item>
+        <content ID="socanam1">
+         Работающий
+        </content>
+       </item>
+      </list>
+      <list listType="unordered">
+       <caption>
+        Место жительства
+       </caption>
+       <item>
+        <content ID="socanam2">
+         Город
+        </content>
+       </item>
+      </list>
+     </text>
+     <!-- [0..*] Кодирование льготной категории -->
+     <!-- [0..1] Кодирование инвалидности -->
+     <!-- [0..*] Кодирование потенциально-опасных для здоровья социальных факторов -->
+     <!-- [0..*] Кодирование профессиональных вредностей -->
+     <!-- [0..1] Кодирование местности регистрации -->
+     <!-- [0..1] Кодирование занятости -->
+     <!-- [0..*] Кодирование вредных привычек и зависимостей -->
+     <entry>
+      <observation classCode="OBS" moodCode="EVN">
+       <code code="5" codeSystem="1.2.643.5.1.13.13.11.1038" codeSystemName="Занятость (социальные группы) населения" codeSystemVersion="13.2" displayName="Работающий">
+        <originalText>
+         <reference value="socanam1"/>
+        </originalText>
+       </code>
+      </observation>
+     </entry>
+     <entry>
+      <observation classCode="OBS" moodCode="EVN">
+       <code code="1" codeSystem="1.2.643.5.1.13.13.11.1042" codeSystemName="Признак жителя города или села" codeSystemVersion="3.2" displayName="Город">
+        <originalText>
+         <reference value="socanam2"/>
+        </originalText>
+       </code>
+      </observation>
+     </entry>
+    </section>
+   </component>
+   <!-- R [1..1] СЕКЦИЯ_4: АНАМНЕЗ ЗАБОЛЕВАНИЯ -->
+   <component>
+    <section>
+     <!-- R [1..1] Код секции -->
+     <code code="ANAM" codeSystem="1.2.643.5.1.13.13.99.2.197" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="3.7" displayName="Анамнез заболевания"/>
+     <!-- R [1..1] Заголовок секции -->
+     <title>
+      Анамнез заболевания
+     </title>
+     <!-- R [1..1] Наполнение секции -->
+     <text>
+      Семейный анамнез по сахарному диабету отягощен (СД-2 у бабки).
+В течение длительного времени имел избыточную массу тела. В период с 2002 по 2003гг отмечает увеличение массы тела на 20 кг, максимальный вес в 2003 году – 118 кг (ИМТ 38,19 кг/м2). В течение 10 лет неоднократно предпринимались попытки по расширению физической активности и соблюдению гипокалорийной диеты с нестойким положительным эффектом. В течение последних 4х месяцев на фоне приема препарата Оземпик 1мг/неделю отмечает снижение массы тела на 5 кг. В настоящее время масса тела – 104 кг (ИМТ 33,66 кг/м2). 
+В 2006 г (30 лет, ИМТ 33,9 кг/м2) впервые отметил жалобы на слабость, утомляемость, жажду, учащенное мочеиспускание, при амбулаторном обследовании выявлена гипергликемия натощак - 8 ммоль/л, диагностирован сахарный диабет 2 типа. В течение года при соблюдении гипокалорийной диеты и дозированных аэробных нагрузок гликемия от 6 до 9 ммоль/л. В 2007 году в связи с ухудшением самочувствия консультирован эндокринологом амбулаторно, назначена таблетированная сахароснижающая терапия (Сиофор 500 мг 2 р/сут, второй препарат назвать затрудняется), гликемия при самоконтроле 6-10 ммоль/л. В 2010 г. отметил повышение гликемии в течение дня до 15-18 ммоль/л, жалобы на сухость во рту, жажду, частое мочеиспускание, выраженную слабость
+Отмечает повышение АД в течение 30 лет, максимально 160/100 мм рт ст. Гипотензивные препараты не принимает.
+     </text>
+     <!-- R [1..1] Анамнез заболевания -->
+     <entry>
+      <observation classCode="OBS" moodCode="EVN">
+       <code code="7006" codeSystem="1.2.643.5.1.13.13.99.2.166" codeSystemName="Кодируемые поля CDA документов" codeSystemVersion="1.49" displayName="Текстовое описание"/>
+       <value xsi:type="ST">
+        Семейный анамнез по сахарному диабету отягощен (СД-2 у бабки).
+В течение длительного времени имел избыточную массу тела. В период с 2002 по 2003гг отмечает увеличение массы тела на 20 кг, максимальный вес в 2003 году – 118 кг (ИМТ 38,19 кг/м2). В течение 10 лет неоднократно предпринимались попытки по расширению физической активности и соблюдению гипокалорийной диеты с нестойким положительным эффектом. В течение последних 4х месяцев на фоне приема препарата Оземпик 1мг/неделю отмечает снижение массы тела на 5 кг. В настоящее время масса тела – 104 кг (ИМТ 33,66 кг/м2). 
+В 2006 г (30 лет, ИМТ 33,9 кг/м2) впервые отметил жалобы на слабость, утомляемость, жажду, учащенное мочеиспускание, при амбулаторном обследовании выявлена гипергликемия натощак - 8 ммоль/л, диагностирован сахарный диабет 2 типа. В течение года при соблюдении гипокалорийной диеты и дозированных аэробных нагрузок гликемия от 6 до 9 ммоль/л. В 2007 году в связи с ухудшением самочувствия консультирован эндокринологом амбулаторно, назначена таблетированная сахароснижающая терапия (Сиофор 500 мг 2 р/сут, второй препарат назвать затрудняется), гликемия при самоконтроле 6-10 ммоль/л. В 2010 г. отметил повышение гликемии в течение дня до 15-18 ммоль/л, жалобы на сухость во рту, жажду, частое мочеиспускание, выраженную слабость
+Отмечает повышение АД в течение 30 лет, максимально 160/100 мм рт ст. Гипотензивные препараты не принимает.
+       </value>
+      </observation>
+     </entry>
+    </section>
+   </component>
+   <!-- R [1..1] СЕКЦИЯ_4: ФИЗИКАЛЬНОЕ ОБСЛЕДОВАНИЕ -->
+   <component>
+    <section>
+     <!-- R [1..1] Код секции -->
+     <code code="PHYS" codeSystem="1.2.643.5.1.13.13.99.2.197" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="3.7" displayName="Физикальное обследование"/>
+     <!-- R [1..1] Заголовок секции -->
+     <title>
+      ФИЗИКАЛЬНОЕ ОБСЛЕДОВАНИЕ
+     </title>
+     <!-- R [1..1] Наполнение секции -->
+     <text>
+      <paragraph>
+       1.
+       Кожные покровы физиологической окраски, умеренной влажности, чистые
+      </paragraph>
+      <paragraph>
+       2.
+       нет
+      </paragraph>
+      <paragraph>
+       3.
+       розового цвета
+      </paragraph>
+      <paragraph>
+       4.
+       Дыхание везикулярное, хрипов нет.
+      </paragraph>
+      <paragraph>
+       5.
+       Тоны сердца ясные, ритмичные, шумов нет
+      </paragraph>
+      <paragraph>
+       6.
+       При пальпации живот мягкий, безболезненный во всех отделах. Печень не выступает из-под края реберной дуги.
+      </paragraph>
+     </text>
+     <!-- R [1..1] Кодирование  -->
+     <entry>
+      <observation classCode="OBS" moodCode="EVN">
+       <code code="7006" codeSystem="1.2.643.5.1.13.13.99.2.166" codeSystemName="Кодируемые поля CDA документов" codeSystemVersion="1.49" displayName="Текстовое описание"/>
+       <value xsi:type="ST">
+        Оценка состояния кожных покровов : Кожные покровы физиологической окраски, умеренной влажности, чистые
+
+Отеки : нет
+
+Оценка состояния видимых слизистых оболочек : розового цвета
+
+Результаты аускультации легких : Дыхание везикулярное, хрипов нет.
+
+Результаты перкуссии и аускультация сердца : Тоны сердца ясные, ритмичные, шумов нет
+
+Результаты пальпации органов брюшной полости с определением размеров печени и селезенки (перкуторно и пальпаторно в сантиметрах из-под края реберной дуги) : При пальпации живот мягкий, безболезненный во всех отделах. Печень не выступает из-под края реберной дуги.
+       </value>
+      </observation>
+     </entry>
+    </section>
+   </component>
+   <!-- R [1..1] СЕКЦИЯ_5: СОСТОЯНИЕ ПРИ ПОСТУПЛЕНИИ  -->
+   <component>
+    <section>
+     <!-- R [1..1] код секции -->
+     <code code="STATEADM" codeSystem="1.2.643.5.1.13.13.11.1379" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="1.2" displayName="Состояние при поступлении"/>
+     <!-- R [1..1] заголовок секции -->
+     <title>
+      СОСТОЯНИЕ ПРИ ПОСТУПЛЕНИИ
+     </title>
+     <!-- R [1..1] наполнение секции -->
+     <text>
+      Средней тяжести.
+     </text>
+     <!-- R [1..1] кодирование состояния при поступлении -->
+     <entry>
+      <observation classCode="OBS" moodCode="EVN">
+       <code code="804" codeSystem="1.2.643.5.1.13.13.11.1380" codeSystemName="Кодируемые поля CDA документов" codeSystemVersion="1.1" displayName="Состояние пациента"/>
+       <value code="2" codeSystem="1.2.643.5.1.13.13.11.1006" codeSystemName="Степень тяжести состояния пациента" codeSystemVersion="2.1" displayName="Средней тяжести" xsi:type="CD"/>
+      </observation>
+     </entry>
+    </section>
+   </component>
+   <!-- [0..1] СЕКЦИЯ_6: ОБЪЕКТИВИЗИРОВАННАЯ ОЦЕНКА СОСТОЯНИЯ БОЛЬНОГО  -->
+   <component>
+    <section>
+     <!-- R [1..1] код секции -->
+     <code code="SCORES" codeSystem="1.2.643.5.1.13.13.11.1379" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="1.2" displayName="Объективизированная оценка состояния больного"/>
+     <!-- R [1..1] заголовок секции -->
+     <title>
+      ОБЪЕКТИВИЗИРОВАННАЯ ОЦЕНКА СОСТОЯНИЯ БОЛЬНОГО
+     </title>
+     <!-- [1..1] наполнение секции -->
+     <text>
+      Отсутствует
+     </text>
+    </section>
+   </component>
+   <!-- [0..1] СЕКЦИЯ_7: ПАТОЛОГИЧЕСКИЕ РЕАКЦИИ  -->
+   <component>
+    <section>
+     <!-- R [1..1] код секции -->
+     <code code="ALL" codeSystem="1.2.643.5.1.13.13.11.1379" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="1.2" displayName="Аллергии и непереносимость"/>
+     <!-- R [1..1] заголовок секции -->
+     <title>
+      ПАТОЛОГИЧЕСКИЕ РЕАКЦИИ
+     </title>
+     <!-- R [1..1] наполнение секции -->
+     <text>
+      <table width="100%">
+       <col width="10%"/>
+       <col width="10%"/>
+       <col width="20%"/>
+       <col width="20%"/>
+       <col width="30%"/>
+       <tbody>
+        <tr>
+         <th>
+          Дата выявления
+         </th>
+         <th>
+          Тип агента
+         </th>
+         <th>
+          Действующее вещество/Агент
+         </th>
+         <th>
+          Тип реакции
+         </th>
+         <th>
+          Комментарии
+         </th>
+        </tr>
+       </tbody>
+      </table>
+     </text>
+    </section>
+   </component>
+   <!-- [0..1] СЕКЦИЯ_8: ВИТАЛЬНЫЕ ПАРАМЕТРЫ -->
+   <component>
+    <section>
+     <!-- R [1..1] Код секции -->
+     <code code="VITALPARAM" codeSystem="1.2.643.5.1.13.13.99.2.197" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="1.13" displayName="Витальные параметры"/>
+     <!-- R [1..1] Заголовок секции -->
+     <title>
+      ВИТАЛЬНЫЕ ПАРАМЕТРЫ
+     </title>
+     <!-- R [1..1] Наполнение секции -->
+     <text>
+      <table width="100%">
+       <tbody>
+        <tr>
+         <th>
+          Дата и время фиксирования витального параметра
+         </th>
+         <th>
+          Название витального параметра
+         </th>
+         <th>
+          Значение витального параметра
+         </th>
+         <th>
+          Единицы измерения
+         </th>
+         <th>
+          Референтный интервал
+         </th>
+        </tr>
+       </tbody>
+      </table>
+     </text>
+    </section>
+   </component>
+   <!-- R [1..1] СЕКЦИЯ_9: ДИАГНОСТИЧЕСКИЕ ИССЛЕДОВАНИЯ И КОНСУЛЬТАЦИИ  -->
+   <component>
+    <section>
+     <!-- R [1..1] код секции -->
+     <code code="PROC" codeSystem="1.2.643.5.1.13.13.11.1379" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="1.2" displayName="Исследования и процедуры"/>
+     <!-- R [1..1] заголовок секции -->
+     <title>
+      ДИАГНОСТИЧЕСКИЕ ИССЛЕДОВАНИЯ И КОНСУЛЬТАЦИИ
+     </title>
+     <!-- [1..1] СЕКЦИЯ_9/1: РЕЗУЛЬТАТЫ ИНСТРУМЕНТАЛЬНЫХ ИССЛЕДОВАНИЙ -->
+     <component>
+      <section>
+       <!-- R [1..1] код секции -->
+       <code code="RESINSTR" codeSystem="1.2.643.5.1.13.13.11.1379" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="1.2" displayName="Результаты инструментальных исследований"/>
+       <!-- R [1..1] заголовок секции -->
+       <title>
+        Результаты инструментальных исследований
+       </title>
+       <!-- [1..1] наполнение секции -->
+       <text>
+        <table width="100%">
+         <tbody>
+          <tr>
+           <th>
+            Дата
+           </th>
+           <th>
+            Исследование
+           </th>
+           <th>
+            Результаты
+           </th>
+           <th>
+            Приоритет
+           </th>
+          </tr>
+         </tbody>
+        </table>
+       </text>
+      </section>
+     </component>
+     <!-- [1..1] СЕКЦИЯ_9/2: РЕЗУЛЬТАТЫ ЛАБОРАТОРНЫХ ИССЛЕДОВАНИЙ -->
+     <component>
+      <section>
+       <!-- R [1..1] код секции -->
+       <code code="RESLAB" codeSystem="1.2.643.5.1.13.13.11.1379" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="1.2" displayName="Результаты лабораторных исследований"/>
+       <!-- R [1..1] заголовок секции -->
+       <title>
+        Результаты лабораторных исследований
+       </title>
+       <!-- [1..1] наполнение секции -->
+       <text>
+        <table width="100%">
+         <col width="28%"/>
+         <col width="20%"/>
+         <col width="18%"/>
+         <col width="21%"/>
+         <col width="13%"/>
+         <thead>
+          <tr>
+           <th>
+            Показатель
+           </th>
+           <th>
+            Значение
+           </th>
+           <th>
+            Единицы измерения
+           </th>
+           <th>
+            Референтный дианазон
+           </th>
+           <th>
+            Дата
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td colspan="5">
+            <content styleCode="Bold">
+             Исследование уровня гликированного гемоглобина в крови
+            </content>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Гемоглобин гликированный, фракция общего гемоглобина в крови методом высокоэффективной жидкостной хроматографии
+           </td>
+           <td>
+            9.7
+           </td>
+           <td>
+            %
+           </td>
+           <td>
+           </td>
+           <td>
+            28.02.2010:21:00
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table width="100%">
+         <col width="28%"/>
+         <col width="20%"/>
+         <col width="18%"/>
+         <col width="21%"/>
+         <col width="13%"/>
+         <thead>
+          <tr>
+           <th>
+            Показатель
+           </th>
+           <th>
+            Значение
+           </th>
+           <th>
+            Единицы измерения
+           </th>
+           <th>
+            Референтный дианазон
+           </th>
+           <th>
+            Дата
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td colspan="5">
+            <content styleCode="Bold">
+             Исследование уровня C-пептида в крови
+            </content>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            С-пептид, массовая концентрация в сыворотке или плазме крови
+           </td>
+           <td>
+            577
+           </td>
+           <td>
+            пмоль/л
+           </td>
+           <td>
+            298 - 2350
+           </td>
+           <td>
+            28.02.2010:21:00
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Суммарные антитела к глутаматдекарбоксилазе 65, концентрация в условных единицах в сыворотке крови иммунологическим методом
+           </td>
+           <td>
+            266.7
+           </td>
+           <td>
+            Ед/мл
+           </td>
+           <td>
+            ≤ 10.0
+           </td>
+           <td>
+            28.02.2010:21:00
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table width="100%">
+         <col width="28%"/>
+         <col width="20%"/>
+         <col width="18%"/>
+         <col width="21%"/>
+         <col width="13%"/>
+         <thead>
+          <tr>
+           <th>
+            Показатель
+           </th>
+           <th>
+            Значение
+           </th>
+           <th>
+            Единицы измерения
+           </th>
+           <th>
+            Референтный дианазон
+           </th>
+           <th>
+            Дата
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td colspan="5">
+            <content styleCode="Bold">
+             Обнаружение кетоновых тел в моче
+            </content>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Кетоновые тела, массовая концентрация в моче с помощью тест-полоски
+           </td>
+           <td>
+            не обнаружено
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+           <td>
+            28.02.2010:21:00
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </text>
+       <entry>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+         <statusCode code="completed"/>
+         <reference typeCode="REFR">
+          <externalDocument>
+           <id extension="Данные скрыты" root="1.2.643.5.1.13.13.12.2.77.8481.100.1.1.51"/>
+          </externalDocument>
+         </reference>
+         <component>
+          <organizer classCode="BATTERY" moodCode="EVN">
+           <code>
+            <originalText>
+             Исследование уровня гликированного гемоглобина в крови
+            </originalText>
+           </code>
+           <statusCode code="completed"/>
+           <component>
+            <observation classCode="OBS" moodCode="EVN">
+             <code code="1003854" codeSystem="1.2.643.5.1.13.13.11.1080" codeSystemName="Федеральный справочник лабораторных исследований. Справочник лабораторных тестов" codeSystemVersion="3.40" displayName="Гемоглобин гликированный, фракция общего гемоглобина в крови методом высокоэффективной жидкостной хроматографии"/>
+             <statusCode code="completed"/>
+             <effectiveTime value="201002282100"/>
+             <value unit="%" value="9.7" xsi:type="PQ"/>
+             <specimen>
+              <specimenRole>
+               <id extension="124562156" root="1.2.643.5.1.13.13.12.2.77.8481.100.1.1.66"/>
+               <specimenPlayingEntity classCode="ENT" determinerCode="INSTANCE">
+                <code code="108" codeSystem="1.2.643.5.1.13.13.11.1081" codeSystemName="Федеральный справочник лабораторных исследований. Справочник лабораторных материалов и образцов" codeSystemVersion="3.1" displayName="Кровь венозная"/>
+                <desc>
+                 Кровь венозная
+                </desc>
+               </specimenPlayingEntity>
+              </specimenRole>
+             </specimen>
+             <entryRelationship inversionInd="false" typeCode="REFR">
+              <act classCode="ACT" moodCode="EVN">
+               <code code="A09.05.083" codeSystem="1.2.643.5.1.13.13.11.1070" codeSystemName="Номенклатура медицинских услуг" codeSystemVersion="2.10" displayName="Исследование уровня гликированного гемоглобина в крови"/>
+               <effectiveTime value="201002282100"/>
+              </act>
+             </entryRelationship>
+            </observation>
+           </component>
+          </organizer>
+         </component>
+        </organizer>
+       </entry>
+       <entry>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+         <statusCode code="completed"/>
+         <reference typeCode="REFR">
+          <externalDocument>
+           <id extension="Данные скрыты" root="1.2.643.5.1.13.13.12.2.77.8481.100.1.1.51"/>
+          </externalDocument>
+         </reference>
+         <component>
+          <organizer classCode="BATTERY" moodCode="EVN">
+           <code>
+            <originalText>
+             Исследование уровня C-пептида в крови
+            </originalText>
+           </code>
+           <statusCode code="completed"/>
+           <component>
+            <observation classCode="OBS" moodCode="EVN">
+             <code code="1013275" codeSystem="1.2.643.5.1.13.13.11.1080" codeSystemName="Федеральный справочник лабораторных исследований. Справочник лабораторных тестов" codeSystemVersion="3.40" displayName="С-пептид, массовая концентрация в сыворотке или плазме крови"/>
+             <statusCode code="completed"/>
+             <effectiveTime value="201002282100"/>
+             <value unit="пмоль/л" value="577" xsi:type="PQ"/>
+             <interpretationCode code="N"/>
+             <specimen>
+              <specimenRole>
+               <id extension="124562156" root="1.2.643.5.1.13.13.12.2.77.8481.100.1.1.66"/>
+               <specimenPlayingEntity classCode="ENT" determinerCode="INSTANCE">
+                <code code="208" codeSystem="1.2.643.5.1.13.13.11.1081" codeSystemName="Федеральный справочник лабораторных исследований. Справочник лабораторных материалов и образцов" codeSystemVersion="3.1" displayName="Сыворотка крови"/>
+                <desc>
+                 Сыворотка крови
+                </desc>
+               </specimenPlayingEntity>
+              </specimenRole>
+             </specimen>
+             <referenceRange>
+              <observationRange>
+               <value xsi:type="IVL_PQ">
+                <low unit="пмоль/л" value="298"/>
+                <high unit="пмоль/л" value="2350"/>
+               </value>
+               <interpretationCode code="N"/>
+              </observationRange>
+             </referenceRange>
+             <entryRelationship inversionInd="false" typeCode="REFR">
+              <act classCode="ACT" moodCode="EVN">
+               <code code="A09.05.205" codeSystem="1.2.643.5.1.13.13.11.1070" codeSystemName="Номенклатура медицинских услуг" codeSystemVersion="2.10" displayName="Исследование уровня C-пептида в крови"/>
+               <effectiveTime value="201002282100"/>
+              </act>
+             </entryRelationship>
+            </observation>
+           </component>
+           <component>
+            <observation classCode="OBS" moodCode="EVN">
+             <code code="1149707" codeSystem="1.2.643.5.1.13.13.11.1080" codeSystemName="Федеральный справочник лабораторных исследований. Справочник лабораторных тестов" codeSystemVersion="3.40" displayName="Суммарные антитела к глутаматдекарбоксилазе 65, концентрация в условных единицах в сыворотке крови иммунологическим методом"/>
+             <statusCode code="completed"/>
+             <effectiveTime value="201002282100"/>
+             <value unit="Ед/мл" value="266.7" xsi:type="PQ"/>
+             <interpretationCode code="H"/>
+             <specimen>
+              <specimenRole>
+               <id extension="124562156" root="1.2.643.5.1.13.13.12.2.77.8481.100.1.1.66"/>
+               <specimenPlayingEntity classCode="ENT" determinerCode="INSTANCE">
+                <code code="208" codeSystem="1.2.643.5.1.13.13.11.1081" codeSystemName="Федеральный справочник лабораторных исследований. Справочник лабораторных материалов и образцов" codeSystemVersion="3.1" displayName="Сыворотка крови"/>
+                <desc>
+                 Сыворотка крови
+                </desc>
+               </specimenPlayingEntity>
+              </specimenRole>
+             </specimen>
+             <referenceRange>
+              <observationRange>
+               <value xsi:type="IVL_PQ">
+                <low unit="Ед/мл" value="0"/>
+                <high unit="Ед/мл" value="10"/>
+               </value>
+               <interpretationCode code="H"/>
+              </observationRange>
+             </referenceRange>
+            </observation>
+           </component>
+          </organizer>
+         </component>
+        </organizer>
+       </entry>
+       <entry>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+         <statusCode code="completed"/>
+         <reference typeCode="REFR">
+          <externalDocument>
+           <id extension="Данные скрыты" root="1.2.643.5.1.13.13.12.2.77.8481.100.1.1.51"/>
+          </externalDocument>
+         </reference>
+         <component>
+          <organizer classCode="BATTERY" moodCode="EVN">
+           <code>
+            <originalText>
+             Обнаружение кетоновых тел в моче
+            </originalText>
+           </code>
+           <statusCode code="completed"/>
+           <component>
+            <observation classCode="OBS" moodCode="EVN">
+             <code code="1019827" codeSystem="1.2.643.5.1.13.13.11.1080" codeSystemName="Федеральный справочник лабораторных исследований. Справочник лабораторных тестов" codeSystemVersion="3.40" displayName="Кетоновые тела, массовая концентрация в моче с помощью тест-полоски"/>
+             <statusCode code="completed"/>
+             <effectiveTime value="201002282100"/>
+             <value xsi:type="ST">
+              не обнаружено
+             </value>
+             <specimen>
+              <specimenRole>
+               <id extension="124562156" root="1.2.643.5.1.13.13.12.2.77.8481.100.1.1.66"/>
+               <specimenPlayingEntity classCode="ENT" determinerCode="INSTANCE">
+                <code code="145" codeSystem="1.2.643.5.1.13.13.11.1081" codeSystemName="Федеральный справочник лабораторных исследований. Справочник лабораторных материалов и образцов" codeSystemVersion="3.1" displayName="Моча"/>
+                <desc>
+                 Моча
+                </desc>
+               </specimenPlayingEntity>
+              </specimenRole>
+             </specimen>
+             <entryRelationship inversionInd="false" typeCode="REFR">
+              <act classCode="ACT" moodCode="EVN">
+               <code code="A09.28.015.001" codeSystem="1.2.643.5.1.13.13.11.1070" codeSystemName="Номенклатура медицинских услуг" codeSystemVersion="2.10" displayName="Обнаружение кетоновых тел в моче экспресс-методом"/>
+               <effectiveTime value="201002282100"/>
+              </act>
+             </entryRelationship>
+            </observation>
+           </component>
+          </organizer>
+         </component>
+        </organizer>
+       </entry>
+      </section>
+     </component>
+     <!-- [1..1] СЕКЦИЯ_9/3: РЕЗУЛЬТАТЫ МОРФОЛОГИЧЕСКИХ ИСССЛЕДОВАНИЙ  -->
+     <!-- [1..1] СЕКЦИЯ_9/4: КОНСУЛЬТАЦИИ ВРАЧЕЙ СПЕЦИАЛИСТОВ -->
+    </section>
+   </component>
+  </structuredBody>
+ </component>
+</ClinicalDocument>
