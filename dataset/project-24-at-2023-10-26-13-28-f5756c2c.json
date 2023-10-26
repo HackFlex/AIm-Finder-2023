@@ -1,0 +1,3553 @@
+[
+  {
+    "id": 401,
+    "annotations": [
+      {
+        "id": 11,
+        "completed_by": 3,
+        "result": [
+          {
+            "value": {
+              "start": 503,
+              "end": 527,
+              "text": "АД, мм рт.ст.: 160 / 100",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "e47_-eFHzv",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 749,
+              "end": 782,
+              "text": "Отеки: пастозность стоп и голеней",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "mF-Gs_0dUs",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1103,
+              "end": 1132,
+              "text": "Усилен легочный рисунок в н/о",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "yIqnnh2xZE",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1134,
+              "end": 1156,
+              "text": "Сердце расширено влево",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "hy26qjGVMc",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1179,
+              "end": 1185,
+              "text": "ПБПНПГ",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "qrFAYJ7e2Q",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 146,
+              "end": 165,
+              "text": "Питание: повышенное",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "P4jfo9Ld7_",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2023-10-02T14:36:03.159688Z",
+        "updated_at": "2023-10-02T14:57:57.997730Z",
+        "draft_created_at": "2023-10-02T14:33:11.624881Z",
+        "lead_time": 478.195,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "5d57e9e5-cce9-461f-a469-67991c8117d2",
+        "import_id": null,
+        "last_action": null,
+        "task": 401,
+        "project": 24,
+        "updated_by": 5,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "file_upload": "f209e876-4147948892_eval.txt",
+    "drafts": [
+      {
+        "id": 30,
+        "user": "grickoff@mail.ru",
+        "created_username": "grickoff@mail.ru, 3",
+        "created_ago": "19 hours, 42 minutes",
+        "result": [
+          {
+            "value": {
+              "start": 503,
+              "end": 527,
+              "text": "АД, мм рт.ст.: 160 / 100",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "e47_-eFHzv",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 749,
+              "end": 782,
+              "text": "Отеки: пастозность стоп и голеней",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "mF-Gs_0dUs",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1103,
+              "end": 1132,
+              "text": "Усилен легочный рисунок в н/о",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "yIqnnh2xZE",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1134,
+              "end": 1156,
+              "text": "Сердце расширено влево",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "hy26qjGVMc",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1179,
+              "end": 1185,
+              "text": "ПБПНПГ",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "qrFAYJ7e2Q",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 146,
+              "end": 165,
+              "text": "Питание: повышенное",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "P4jfo9Ld7_",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          }
+        ],
+        "lead_time": 527.845,
+        "was_postponed": false,
+        "import_id": null,
+        "created_at": "2023-10-25T17:46:17.939697Z",
+        "updated_at": "2023-10-25T17:46:26.746788Z",
+        "task": 401,
+        "annotation": 11
+      }
+    ],
+    "predictions": [],
+    "data": {
+      "text": "Рост 170 см.Вес 100,0 кг.ИМТ 34,60 кг/м2.Температура тела: 36,6 °C.  Правильно ориентирована в пространстве, собственной личности и времени: да . Питание: повышенное. Катаральные явления: нет. Кожа: обычной окраски, влажная. Видимые слизистые нормальной окраски.  Над легкими дыхание: жесткое. Хрипы: , единичные рассеянные сухие хрипы над всей поверхностью легких, застойные хрипы в н/отделах легких. ЧДД: 19 в мин , сатурация 96% на воздухе в покое.  Органы кровообращения: Пульс: 78 в мин, ритмичный.АД, мм рт.ст.: 160 / 100.  Органы пищеварения: Живот при пальпации: мягкий, не вздут, участвует в акте дыхания, чувствительный при пальпации в надлобковой области. Печень: не увеличена .Селезенка: не увеличена .Симптомы раздражения брюшины: нет .Отеки: пастозность стоп и голеней. Стул: оформленный( был сегодня утром), газы отходят. Патологические примеси в кале: нет .  Симптом поколачивания отрицательный с обеих сторон. Мочеиспускание: болезненное, учащенное, диурез достаточный ( со слов больной).  Гемоглобин -124, Лейкоциты – 7.8, Тром-138.Рент ОГК - очаговых и инфильтративных изменений нет. Усилен легочный рисунок в н/о. Сердце расширено влево. ЭКГ -ритм синусовый, ПБПНПГ, ишемических изменений не выявлено. КТ головного мозга- острой патологии нет."
+    },
+    "meta": {},
+    "created_at": "2023-09-20T18:41:07.995414Z",
+    "updated_at": "2023-10-02T14:57:58.077349Z",
+    "inner_id": 1,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 24,
+    "updated_by": 5,
+    "comment_authors": []
+  },
+  {
+    "id": 402,
+    "annotations": [
+      {
+        "id": 12,
+        "completed_by": 3,
+        "result": [
+          {
+            "value": {
+              "start": 747,
+              "end": 766,
+              "text": "АД 240/120 мм рт ст",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "p3fWsLY8sZ",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 793,
+              "end": 796,
+              "text": "ИБС",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "7GCIdEmM6Q",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 798,
+              "end": 831,
+              "text": "Атеросклеротический кардиосклероз",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "IrJ9rVxUYp",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1044,
+              "end": 1062,
+              "text": "БА легкого течения",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "3eQb-mu9Jg",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1131,
+              "end": 1167,
+              "text": " ЯБ12 перстной кишки много лет назад",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "0vKtKQQLrk",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1044,
+              "end": 1075,
+              "text": "БА легкого течения около 20 лет",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "diiNybC52h",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1132,
+              "end": 1136,
+              "text": "ЯБ12",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "GE4f0zRrgN",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1169,
+              "end": 1188,
+              "text": "Хронический гастрит",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "-m7PTJrwzl",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1190,
+              "end": 1207,
+              "text": "Хронический колит",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "j8E2KqwgJA",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1209,
+              "end": 1237,
+              "text": "СД2 типа, инсулинопотребный,",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "zQhoDIPS45",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1329,
+              "end": 1332,
+              "text": "ЦВБ",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "Cq8Ej-A1up",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1334,
+              "end": 1368,
+              "text": "Хроническая ишемия головного мозга",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "ixsoTB4Vp6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1370,
+              "end": 1411,
+              "text": "Варикозная болезнь вен нижних конечностей",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "Jn2yCJfj7x",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1413,
+              "end": 1453,
+              "text": "Хроническая инфекция мочевыводящих путей",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "cHfHTNbIjK",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1455,
+              "end": 1478,
+              "text": "Хронический пиелонефрит",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "aGv7O5xM7A",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1480,
+              "end": 1498,
+              "text": "Хронический цистит",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "ho3qWfcieo",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1499,
+              "end": 1522,
+              "text": "Деформирующий спондилез",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "rUFpemuVwE",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1524,
+              "end": 1550,
+              "text": "ДОА тазобедренных суставов",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "HRZIT8bp4x",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1551,
+              "end": 1554,
+              "text": "АИТ",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "H2jtZK7C4q",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1556,
+              "end": 1566,
+              "text": "гипотиреоз",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "VePTvooelo",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1622,
+              "end": 1662,
+              "text": "Экзогенно- конституционное ожирение 2ст.",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "yFIEe2WwWV",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1871,
+              "end": 1923,
+              "text": "Более 10 лет назад начала отмечать явления диспепсии",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "9oqKCm2_nC",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1906,
+              "end": 1923,
+              "text": "явления диспепсии",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "iwOuo6yhMh",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1983,
+              "end": 2002,
+              "text": "хронический гастрит",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "dUMkMBwzSk",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 2004,
+              "end": 2021,
+              "text": "Хронический колит",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "JXIY_Z_9X1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 2139,
+              "end": 2154,
+              "text": "высоких цифр АД",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "q0YPiL1J27",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 2155,
+              "end": 2177,
+              "text": "диспепсические явления",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "oulOxOvTkR",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 2187,
+              "end": 2204,
+              "text": "беспокоили запоры",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "9Btiybfl4s",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 2198,
+              "end": 2204,
+              "text": "запоры",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "f_O4s2FB02",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 2215,
+              "end": 2238,
+              "text": "с нарастанием симптомов",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "B2_2f1joLA",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 2251,
+              "end": 2264,
+              "text": "боли в животе",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "2KLj40WJmG",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 2266,
+              "end": 2273,
+              "text": "тошноты",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "KfRbN5joPD",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 2288,
+              "end": 2307,
+              "text": "АД 200/105 мм рт ст",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "8O4iz05t6l",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 2309,
+              "end": 2353,
+              "text": "прием гипотензивных препаратов - без эффекта",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "92KkW7sUPQ",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1663,
+              "end": 1689,
+              "text": "Аппендэктомия 30 лет назад",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "7N4ElniXPn",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1691,
+              "end": 1728,
+              "text": "гистерэктомия по поводу миомы в 2004г",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "TxQGd-hQof",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2023-10-02T14:45:57.666164Z",
+        "updated_at": "2023-10-02T15:00:09.489297Z",
+        "draft_created_at": "2023-10-02T14:40:03.163472Z",
+        "lead_time": 720.1890000000001,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "15c27dcd-ed82-4aff-8e96-e043fdb96eb7",
+        "import_id": null,
+        "last_action": null,
+        "task": 402,
+        "project": 24,
+        "updated_by": 5,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "file_upload": "7bb40d34-4147948892_anam.txt",
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "text": "Анамнез жизни Росла и развивалась без особенностей.  Вредные привычки: употребление алкоголя — отрицает, наркотиков- отрицает, курение- отрицает  Эпидемиологический анамнез: гепатит, сифилис, ВИЧ, туберкулез, корь- отрицает. Выезд за пределы РФ в течение 12 месяцев, в эпид. районы- отрицает. Контакт с инфекционными больными за последние 6 месяцев — отрицает. Вакцинирована от коронавирусной инфекции ( Спутник V) в 2021г. Мазки из зева и ротоглотки на коронавирусную инфекцию (ПЦР для выявления SARS-CoV-2) от 13 .11.2022г взяты в приемном отделении (экспресс- тест) — результат отрицательный  Наследственность: не отягощена .  Перенесенные и сопут. заболевания: Со слов больной страдает гипертонической болезнью длительное время с макс цифрами АД 240/120 мм рт ст, целевое 140/80 мм рт ст, ИБС. Атеросклеротический кардиосклероз, постоянно принимает Таб Бисопролол 5 мг 1 раз в сутки, Таб Кардиомагнил 75 мг 1 раз в сутки, Таб Индапамид 1.5 мг раз в сутки, Таб Лизиноприл 20 мг 1 раз в сутки. ОНМК, ИМ, онкологические заболевания- отрицает. БА легкого течения около 20 лет, базисную терапию не получает, беродуал по потребности. ЯБ12 перстной кишки много лет назад. Хронический гастрит. Хронический колит. СД2 типа, инсулинопотребный, длинный инсулин утром 46 ЕД и вечером 40 ЕД, принимает Таб Метформин 850 мг 1 раз в сутки. ЦВБ. Хроническая ишемия головного мозга. Варикозная болезнь вен нижних конечностей. Хроническая инфекция мочевыводящих путей. Хронический пиелонефрит. Хронический цистит Деформирующий спондилез. ДОА тазобедренных суставов.АИТ, гипотиреоз, постоянно принимает Л-тироксин 150 мкг 1 раз в сутки. Экзогенно- конституционное ожирение 2ст. Аппендэктомия 30 лет назад, гистерэктомия по поводу миомы в 2004гДругие хронические заболевания отрицает.  Социальный анамнез: на руках открытого л/н не имеет, л/н не требуется, пенсионер Анамнез заболевания Более 10 лет назад начала отмечать явления диспепсии. Обследовалась по месту жительства, был поставлен диагноз: хронический гастрит. Хронический колит. Лечилась согласно рекомендациям, терапию принимала регулярно. Настоящее ухудшение около недели назад, когда на фоне высоких цифр АД диспепсические явления наросли, беспокоили запоры. 14.11.22 с нарастанием симптомов, появлением боли в животе, тошноты при измерение АД 200/105 мм рт ст, прием гипотензивных препаратов - без эффекта, больная вызвала СМП, доставлена в приемное отделение для обследования и лечения."
+    },
+    "meta": {},
+    "created_at": "2023-09-20T18:41:07.995458Z",
+    "updated_at": "2023-10-02T15:00:09.565955Z",
+    "inner_id": 2,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 24,
+    "updated_by": 5,
+    "comment_authors": []
+  },
+  {
+    "id": 403,
+    "annotations": [
+      {
+        "id": 13,
+        "completed_by": 3,
+        "result": [
+          {
+            "value": {
+              "start": 58,
+              "end": 65,
+              "text": "37,0 °C",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "PxljJlySEs",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 268,
+              "end": 288,
+              "text": "Цианоз губ умеренный",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "LYLSy2tZy3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 268,
+              "end": 279,
+              "text": "Цианоз губ ",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "ZsA7-56qzT",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2023-10-02T14:53:52.249528Z",
+        "updated_at": "2023-10-02T15:00:34.270014Z",
+        "draft_created_at": "2023-10-02T14:47:57.469255Z",
+        "lead_time": 483.966,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "48d86373-762a-44b1-91cf-eb1275b6f3f5",
+        "import_id": null,
+        "last_action": null,
+        "task": 403,
+        "project": 24,
+        "updated_by": 5,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "file_upload": "a20beb1c-4147681395_eval.txt",
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "text": "Рост 158 см.Вес 55,0 кг.ИМТ 22,03 кг/м2.Температура тела: 37,0 °C.  Правильно ориентирован в пространстве, собственной личности и времени: да .  Питание: умеренное. Катаральные явления: нет.  Кожа: физиологической окраски, влажная,  Видимые слизистые: обычной окраски Цианоз губ умеренный.  Органы дыханияЧДД: 22 в мин , сатурация 96 % на воздухе .  Органы кровообращения Пульс: 98 в мин, ритмичный,  АД, мм рт.ст.: 114 / 66.  Органы пищеварения Живот при пальпации: мягкий , не вздут, безболезненный.  Печень: не увеличена .  Селезенка: не увеличена .  Симптомы раздражения брюшины: нет .  Отеки: нет . Патологические примеси в кале: нет .  Симптом поколачивания отрицательный с обеих сторон. Физиологические отправления в норме."
+    },
+    "meta": {},
+    "created_at": "2023-09-20T18:41:07.995482Z",
+    "updated_at": "2023-10-02T15:00:34.340590Z",
+    "inner_id": 3,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 24,
+    "updated_by": 5,
+    "comment_authors": []
+  },
+  {
+    "id": 404,
+    "annotations": [
+      {
+        "id": 14,
+        "completed_by": 5,
+        "result": [
+          {
+            "value": {
+              "start": 519,
+              "end": 538,
+              "text": "Длительное время СД",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "hFwpxbNkUW",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 615,
+              "end": 639,
+              "text": "Пиелонефрит правой почки",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "NbbcX5T5Fm",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 760,
+              "end": 788,
+              "text": "повышение температуры до 39С",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "MnSVK_z60r",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 790,
+              "end": 796,
+              "text": "кашель",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "7X0jrfj8na",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 973,
+              "end": 1001,
+              "text": "наросли вышеуказанные жалобы",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "Zm5YBw8v7c",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 930,
+              "end": 965,
+              "text": "Настоящее ухудшение последние 2 дня",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "5LbfMnD2hP",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1004,
+              "end": 1020,
+              "text": "появилась одышка",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "08gfdGle7d",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1034,
+              "end": 1053,
+              "text": "ПЦР ( положительный",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "gKbinmvE4n",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2023-10-02T15:02:57.694001Z",
+        "updated_at": "2023-10-02T15:02:57.694011Z",
+        "draft_created_at": "2023-10-02T15:00:59.818021Z",
+        "lead_time": 141.448,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "d0a120d7-fe15-4087-ba08-a8d87f82bd09",
+        "import_id": null,
+        "last_action": null,
+        "task": 404,
+        "project": 24,
+        "updated_by": 5,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "file_upload": "dd5b3f1e-4147681395_anam.txt",
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "text": "Анамнез жизни ЭПИДЕМИОЛОГИЧЕСКИЕ ДАННЫЕ: Возвращение из-за рубежа за 14 дней до появления симптомов заболевания отрицает. Наличие тесных контактов за последние 14 дней с лицами, находящимися под наблюдением по COVID 19, с лицами, которые заболели COVID 19 , с лицами, у которых лабораторно подтвержден диагноз COVID 19 — отрицает.Тbc, ВИЧ,гепатиты, венерические инфекции — отрицает. Экспертный анамнез:работает. Открыт л\\н с 15.12.2021. ( электронный). Москва.Наследственность: не отягощена . Перенесенные заболевания: Длительное время СД (принимает Сиафор 1000 мг х 2 раза в день, диабетон 60 мг х 2 раза в день). Пиелонефрит правой почки.ОНМК, ИМ, БА, онкологические заболевания- отрицает. Анамнез заболевания Считает себя больным с 15.12.21, когда отметила повышение температуры до 39С, кашель. По назначению терапевта принимала с 15.12.2021 до 20.12.2021. Арбидол 2 таб х 4 раза в день жаропонижающие-без выраженного эффекта. Настоящее ухудшение последние 2 дня, когда наросли вышеуказанные жалобы и появилась одышка. 15.12.2021. ПЦР ( положительный.). СМП доставлена для обследования и лечения."
+    },
+    "meta": {},
+    "created_at": "2023-09-20T18:41:07.995507Z",
+    "updated_at": "2023-10-02T15:02:57.762830Z",
+    "inner_id": 4,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 24,
+    "updated_by": 5,
+    "comment_authors": []
+  },
+  {
+    "id": 405,
+    "annotations": [
+      {
+        "id": 15,
+        "completed_by": 5,
+        "result": [
+          {
+            "value": {
+              "start": 31,
+              "end": 64,
+              "text": "Гиперстенический тип телосложения",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "hCr3bZop5c",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 276,
+              "end": 291,
+              "text": "дыхание жесткое",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "gJIAhK2Ujh",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 337,
+              "end": 400,
+              "text": "Границы сердца расширены влево на 2 см от среднеключичной линии",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "s1rzBAa2Bj",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 419,
+              "end": 444,
+              "text": "сердечные тоны приглушены",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "dQ_ISowBXe",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 489,
+              "end": 528,
+              "text": "Артериальное давление 150/90 мм. рт.ст.",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "ph0sNR0L2z",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2023-10-02T15:03:54.941988Z",
+        "updated_at": "2023-10-02T15:03:54.942004Z",
+        "draft_created_at": "2023-10-02T15:03:14.596785Z",
+        "lead_time": 52.437,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "20d4fc24-d38c-44f7-935d-f4e304cce8d3",
+        "import_id": null,
+        "last_action": null,
+        "task": 405,
+        "project": 24,
+        "updated_by": 5,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "file_upload": "b8b920d3-4147025371_eval.txt",
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "text": "Сознание ясное. Т тела 36,6 С. Гиперстенический тип телосложения. Кожные покровы, видимые слизистые обычной окраски. Лимфоузлы не увеличены. Отёков нет. Система органов дыхания: Границы лёгких в пределах нормы. ЧДД 18 в мин. Перкуторный звук легочный. При аускультации лёгких дыхание жесткое, хрипов нет. Система органов кровообращения: Границы сердца расширены влево на 2 см от среднеключичной линии. При аускультации сердечные тоны приглушены, ритм правильный, с частотой - 78 уд в мин. Артериальное давление 150/90 мм. рт.ст. на обеих руках. Система органов пищеварения: Аппетит сохранен. Язык влажный, чистый. Живот при пальпации мягкий, безболезненный. Печень не увеличена, безболезненная. Селезёнка не пальпируется. Стул: в норме. Мочеполовая система: Область почек не изменена. Симптом поколачивания отрицательный с обеих сторон. Дизурии нет. Неврологический статус: Память сохранена. Сознание ясное. Менингеальных знаков нет. Язык по средней линии."
+    },
+    "meta": {},
+    "created_at": "2023-09-20T18:41:07.995530Z",
+    "updated_at": "2023-10-02T15:03:55.013246Z",
+    "inner_id": 5,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 24,
+    "updated_by": 5,
+    "comment_authors": []
+  },
+  {
+    "id": 406,
+    "annotations": [
+      {
+        "id": 16,
+        "completed_by": 5,
+        "result": [
+          {
+            "value": {
+              "start": 56,
+              "end": 80,
+              "text": "Артрит плечевых суставов",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "uOdTZycLra",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 82,
+              "end": 85,
+              "text": "ЧМТ",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "WRLA2sDbk5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 96,
+              "end": 139,
+              "text": "грыжа поясничного отдела позвоночника L4-L5",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "l4JMMonoFB",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 415,
+              "end": 446,
+              "text": "Перенес короновирусную инфекцию",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "W1Dj5G3Lhk",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 580,
+              "end": 619,
+              "text": "максимальные цифры АД 165/90 мм рт. ст.",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "aATlcT-xnd",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 771,
+              "end": 772,
+              "text": " ",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "osdLufRuJf",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 772,
+              "end": 803,
+              "text": "перенес коронавирусную инфекцию",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "jFM03anZtk",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 532,
+              "end": 565,
+              "text": "Страдает гипертонической болезнью",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "MEnax7Ldnn",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 865,
+              "end": 908,
+              "text": "перенес ОНМК на фоне гипертонического криза",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "nc2YL5PvaL",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2023-10-02T15:34:27.745303Z",
+        "updated_at": "2023-10-02T15:34:27.745318Z",
+        "draft_created_at": "2023-10-02T15:04:20.091257Z",
+        "lead_time": 1829.197,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "a0a0c58e-0be6-46ec-9ca7-f4e5c206341d",
+        "import_id": null,
+        "last_action": null,
+        "task": 406,
+        "project": 24,
+        "updated_by": 5,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "file_upload": "c3d7ed24-4147025371_anam.txt",
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "text": "Анамнез жизни Перенесенные и сопутствующие заболевания: Артрит плечевых суставов, ЧМТ.Операции: грыжа поясничного отдела позвоночника L4-L5 Наследственность: не отягощена. Вредные привычки: отрицает. Эпид . анамнез : тифы , малярию , туберкулез , гепатит, венерические заболевания отрицает . В эпид.районы за последние два года не выезжал. Контакт с инфекционными больными за последние 14календарных дней отрицает. Перенес короновирусную инфекцию в феврале 2021 года. Вакцинирован от COVID19 -апрель 2022 года.  Анамнез заболевания Страдает гипертонической болезнью более 10 лет, максимальные цифры АД 165/90 мм рт. ст.,постоянно принимает гизаар 50/12,5 мг(лозартан+гидрохлортиазид), конкор 2,5 мг, лозап 50 мг, аторис 10 мг в сутки, целевое АД 130/80 мм рт. ст. В 2021г перенес коронавирусную инфекцию, после чего начали беспокоить вышеуказанные жалобы. В 2011 г перенес ОНМК на фоне гипертонического криза. Отменил самостоятельно прием кардиомагнила.. Данное ухудшение последний месяц, когда появились вышеуказаные жалобы, в связи с чем госпитализирован в отделение терапии для дальнейшего обследования и подбора антигипертензивной терапии."
+    },
+    "meta": {},
+    "created_at": "2023-09-20T18:41:07.995555Z",
+    "updated_at": "2023-10-02T15:34:27.812933Z",
+    "inner_id": 6,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 24,
+    "updated_by": 5,
+    "comment_authors": []
+  },
+  {
+    "id": 407,
+    "annotations": [
+      {
+        "id": 17,
+        "completed_by": 5,
+        "result": [
+          {
+            "value": {
+              "start": 138,
+              "end": 171,
+              "text": " Кожные покровы бледные, влажные.",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "yCF4MzY1jm",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 465,
+              "end": 477,
+              "text": "ЧДД 20 в мин",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "EdRkvBOraT",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 564,
+              "end": 632,
+              "text": "При аускультации в легких дыхание жесткое, несколько ослаблено в н/о",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "aX4vg8YNR_",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 762,
+              "end": 778,
+              "text": "Пульс аритмичный",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "5IwjXM8anJ",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 908,
+              "end": 947,
+              "text": "Артериальное давление 170/85 мм. рт. ст",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "pAJHJ3WlkU",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1317,
+              "end": 1341,
+              "text": "Память несколько снижена",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "XsM4q1wrPj",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2023-10-02T15:36:12.312848Z",
+        "updated_at": "2023-10-02T15:36:12.312864Z",
+        "draft_created_at": "2023-10-02T15:34:47.133775Z",
+        "lead_time": 101.116,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "dc38feec-2494-4d6f-81e2-e59fbcf1e79e",
+        "import_id": null,
+        "last_action": null,
+        "task": 407,
+        "project": 24,
+        "updated_by": 5,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "file_upload": "0adfb598-4146101850_eval.txt",
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "text": "Рост 172 см.Вес 74,0 кг.ИМТ 25,01 кг/м2.Состояние тяжелое, стабильное. Температура 36,8С. Сознание ясное, ориентируется в месте и времени. Кожные покровы бледные, влажные. Телосложение правильное, нормостеническое. Обычного питания. Лимфоузлы не увеличены. Отеков нет. Цианоза нет. Система органов дыхания: Грудная клетка: правильная. Межреберные промежутки не увеличены. Движения симметричны. Дыхание ритмичное. Вспомогательная мускулатура в дыхании не участвует. ЧДД 20 в мин. Сатурация 96%. При пальпации эластичная, безболезненная. Перкуторно звук коробочный. При аускультации в легких дыхание жесткое, несколько ослаблено в н/о, хрипы не выслушиваются. Система кровообращения: При аускультации сердечные тоны нормальной звучности. Патологических шумов нет. Пульс аритмичный, с частотой 85 уд/мин, удовлетворительного наполнения. На магистральных артериях верхних конечностей и шеи - удовлетворительный. Артериальное давление 170/85 мм. рт. ст.Система пищеварения: Аппетит не снижен. Язык в норме. Живот мягкий, безболезненный. Стул регулярный, оформленный. Печень без особенностей. Желчный пузырь не пальпируется. Селезёнка не пальпируется. Мочеполовая система: Симптом поколачивания отрицательный с обеих сторон. Дизурических расстройств нет. Область почек не изменена. Неврологический статус: Речь разборчива. Память несколько снижена. Реакция на свет живая. Язык по средней линии. Нистагм отсутствует. Менингеальные симптомы отсутствуют. Парезы, параличи отсутствуют. Интеллект и критика не снижены. В психоэмоциональном статусе стабилен"
+    },
+    "meta": {},
+    "created_at": "2023-09-20T18:41:07.995581Z",
+    "updated_at": "2023-10-02T15:36:12.386419Z",
+    "inner_id": 7,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 24,
+    "updated_by": 5,
+    "comment_authors": []
+  },
+  {
+    "id": 408,
+    "annotations": [
+      {
+        "id": 18,
+        "completed_by": 5,
+        "result": [
+          {
+            "value": {
+              "start": 176,
+              "end": 215,
+              "text": "ХБП 3б ст ( СКФ 39,7 по Кокрофту голту)",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "jOHT_YOKa3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 217,
+              "end": 234,
+              "text": "Нефроангиосклероз",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "euD135plCY",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 236,
+              "end": 261,
+              "text": "Вторично сморщенные почки",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "Yc5nqF3i9x",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 263,
+              "end": 266,
+              "text": "МКБ",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "6fgAaYSvWd",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 268,
+              "end": 291,
+              "text": "Хронический пиелонефрит",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "zVTdxaJyN5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 293,
+              "end": 313,
+              "text": "Сенильный остеопороз",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "0bt_j5P48p",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 314,
+              "end": 335,
+              "text": "Хронический простатит",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "yi9yOY0frD",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 337,
+              "end": 346,
+              "text": "ДГПЖ 1 ст",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "NuMljrtA_Y",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 551,
+              "end": 614,
+              "text": "Гипертонической болезнью с максимальным АД до 210/100 мм рт.ст.",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "A0WX140-Xz",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 645,
+              "end": 656,
+              "text": "Перенес ОИМ",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "I4MWdpE7V8",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 667,
+              "end": 684,
+              "text": "с проведением АКШ",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "HsIQ5yC_R9",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 686,
+              "end": 741,
+              "text": "Балонная ангиопластика и стентирование добавочной ветви",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "_OiakzR-EK",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 772,
+              "end": 865,
+              "text": "дегенеративный порок сердца: сочетанный аортальный порок с преобладанием недостаточности 2 ст",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "izCGewm5jS",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 866,
+              "end": 899,
+              "text": "Длительно персистирующая форма ФП",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "bspioJnjU3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1002,
+              "end": 1024,
+              "text": "декомпенсации ХСН, ГБ.",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "opryU5Ll9l",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1313,
+              "end": 1334,
+              "text": "участились подъемы АД",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "KsgbKhn-2k",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2023-10-02T15:41:16.133452Z",
+        "updated_at": "2023-10-02T15:41:16.133468Z",
+        "draft_created_at": "2023-10-02T15:36:30.734972Z",
+        "lead_time": 300.655,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "36e7b7d1-78a3-461b-83ca-a497693c41b3",
+        "import_id": null,
+        "last_action": null,
+        "task": 408,
+        "project": 24,
+        "updated_by": 5,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "file_upload": "cde6bffd-4146101850_anam.txt",
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "text": "Анамнез жизни   Рос и развивался согласно возрастуПеренесенные заболевания :Сахарный диабет, ОНМК , бронхиальную астму , онкологические заболевания, язвенный анамнез отрицает. ХБП 3б ст ( СКФ 39,7 по Кокрофту голту). Нефроангиосклероз. Вторично сморщенные почки. МКБ. Хронический пиелонефрит. Сенильный остеопороз.Хронический простатит. ДГПЖ 1 ст. COVID-19 в анамнезе отрицает. Употребление наркотиков, алкоголя отрицает. Аллергоанамнез не отягощен. Экспертный анамнез:Пенсионер. В ЛН не нуждается.    Анамнез заболевания   Со слов длительно страдает Гипертонической болезнью с максимальным АД до 210/100 мм рт.ст. Адаптирован к 140/80 мм рт.ст.Перенес ОИМ в 1989 г. с проведением АКШ. Балонная ангиопластика и стентирование добавочной ветви в 2016 году. Также в анамнезе дегенеративный порок сердца: сочетанный аортальный порок с преобладанием недостаточности 2 ст.Длительно персистирующая форма ФП со спонтанным восстановлением синусвового ритма. Неоднократно проходил стационарное лечение по поводу декомпенсации ХСН, ГБ.Находился на стационарнорм лечении в июне 2022 года в . На постоянной основе принимает Бисопролол 5 мг по 2 раза в сут, Амлодипин 5 мг вечером, Лозап 50 мг по 2 раза в сут, Аторвастатин 20 мг вечером, Эликвис 2,5 по 2 раза в сут.Ухудшение на данный момент отмечает в течение 5 дней, когда участились подъемы АД. Гипотензивная терапия без положительного эффекта. 12.09.2022 доставлен СМП. Госпитализирован в отделение терапии для дальнейшего обследования и лечения."
+    },
+    "meta": {},
+    "created_at": "2023-09-20T18:41:07.995606Z",
+    "updated_at": "2023-10-02T15:41:16.239250Z",
+    "inner_id": 8,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 24,
+    "updated_by": 5,
+    "comment_authors": []
+  },
+  {
+    "id": 409,
+    "annotations": [
+      {
+        "id": 19,
+        "completed_by": 5,
+        "result": [
+          {
+            "value": {
+              "start": 25,
+              "end": 40,
+              "text": "ИМТ 39,25 кг/м2",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "Fc8LGbIdtk",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 12,
+              "end": 24,
+              "text": "Вес 130,0 кг",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "9WYYgvf7Pz",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 107,
+              "end": 133,
+              "text": "Пастозность голеней и стоп",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "zlNcyLaq91",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 135,
+              "end": 179,
+              "text": "Варикозное расширение вен нижних конечностей",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "dtc1ZGDdWp",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 215,
+              "end": 227,
+              "text": "ЧДД 22 в мин",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "_ijaSwr72D",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 238,
+              "end": 253,
+              "text": "дыхание жесткое",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "2fHja-Fz62",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 255,
+              "end": 302,
+              "text": "\"застойные\" хрипы в нижних отделах с 2-х сторон",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "inYknl0fnr",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 304,
+              "end": 344,
+              "text": "Границы сердца расширены влево на 2.0 см",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "zdaK0g9b-T",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 394,
+              "end": 445,
+              "text": "Живот мягкий, чувствительный по ходу толстой кишки.",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "ITN4VoAc9j",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 446,
+              "end": 483,
+              "text": "Печень: + 2см ниже края реберной дуги",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "k5lNCmOt4Q",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 519,
+              "end": 539,
+              "text": "склонность к запорам",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "F5ocmTZ-Fk",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 550,
+              "end": 571,
+              "text": "примесь крови в стуле",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "Eqj49eB5n_",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 701,
+              "end": 754,
+              "text": "Нарушение чувствительности по полиневритическому типу",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "eVkw1GWEfM",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2023-10-02T15:43:25.928637Z",
+        "updated_at": "2023-10-02T15:43:25.928653Z",
+        "draft_created_at": "2023-10-02T15:41:33.999377Z",
+        "lead_time": 101.963,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "c7d1ec88-8b60-4160-9dd3-a8f831b0995d",
+        "import_id": null,
+        "last_action": null,
+        "task": 409,
+        "project": 24,
+        "updated_by": 5,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "file_upload": "3813cd0a-4145178329_eval.txt",
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "text": "Рост 182 см.Вес 130,0 кг.ИМТ 39,25 кг/м2.Состояние средней степени тяжести. Кожные покровы бледно-розовые. Пастозность голеней и стоп. Варикозное расширение вен нижних конечностей. Лимфоузлы мануально не увеличены. ЧДД 22 в мин. В легких дыхание жесткое, \"застойные\" хрипы в нижних отделах с 2-х сторон. Границы сердца расширены влево на 2.0 см. АД 125\\65мм ртст. Пульс 62 уд в мин, ритмичный. Живот мягкий, чувствительный по ходу толстой кишки. Печень: + 2см ниже края реберной дуги. Пальпируется край селезенки.Стул: склонность к запорам, отмечает примесь крови в стуле. Область почек не изменена. Дизурии нет. Неврологический статус: Сознание ясное. Менигеальных знаков нет. Язык по средней линии. Нарушение чувствительности по полиневритическому типу."
+    },
+    "meta": {},
+    "created_at": "2023-09-20T18:41:07.995628Z",
+    "updated_at": "2023-10-02T15:43:25.997001Z",
+    "inner_id": 9,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 24,
+    "updated_by": 5,
+    "comment_authors": []
+  },
+  {
+    "id": 410,
+    "annotations": [
+      {
+        "id": 20,
+        "completed_by": 5,
+        "result": [
+          {
+            "value": {
+              "start": 75,
+              "end": 97,
+              "text": "сахарный диабет 2 типа",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "h2wDfY7tsT",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 294,
+              "end": 318,
+              "text": "Двустороннний коксартроз",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "mTJrIt9ueT",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 320,
+              "end": 342,
+              "text": "двусторонний гонартроз",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "JoaQKv7i-Q",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 344,
+              "end": 385,
+              "text": "варикозная болезнь вен нижних конечностей",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "gxqrdKwIFP",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 387,
+              "end": 406,
+              "text": "гепатоспленомегалия",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "JPIMRe5OMR",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 459,
+              "end": 508,
+              "text": "эндопротезирование правого тазобедренного сустава",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "gDrNxYj9gO",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 804,
+              "end": 834,
+              "text": "ИБС:Стенокардия напряжения 3ФК",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "jkCJIaZksD",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 853,
+              "end": 915,
+              "text": "гипертоническая болезнь с максимальными цифрами 200\\100мм ртст",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "HBieXnXiYE",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1008,
+              "end": 1020,
+              "text": "перенес ОНМК",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "lIoWwtWMRG",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1129,
+              "end": 1150,
+              "text": "примесь крови в стуле",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "4HzXEfVQ6M",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2023-10-02T15:45:13.081553Z",
+        "updated_at": "2023-10-02T15:45:13.081569Z",
+        "draft_created_at": "2023-10-02T15:43:40.683612Z",
+        "lead_time": 104.091,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "3ccd80e2-1fd8-4bdc-b65d-7745a5f62dec",
+        "import_id": null,
+        "last_action": null,
+        "task": 410,
+        "project": 24,
+        "updated_by": 5,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "file_upload": "4f5e1bee-4145178329_anam.txt",
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "text": "Анамнез жизни   Сопутствующие и перенесенные заболевания: Длительное время сахарный диабет 2 типа, последние 17лет на инсулинотерапии, принимает короткий инсулин 24-30ЕД перед едой 3раза в день, длинный инсулин 60ед п\\з, 30ед на ночь п\\к, форсигу 10мг на ночь, метформин 1000мг 1-2раза в день. Двустороннний коксартроз, двусторонний гонартроз, варикозная болезнь вен нижних конечностей, гепатоспленомегалия, принимает фосфоглив 1капс х 2раза в день.Операции: эндопротезирование правого тазобедренного сустава. Аллергический анамнез: сульфаниламидные препараты.Эпид.анамнез: тифы, малярию, туберкулез, гепатит, венерические заболевания отрицает. Контакт с инфекционными больными за последние 14 календарных дней отрицает. За последние полгода в эпид.районы не выезжал.  Анамнез заболевания   В ананемнезе ИБС:Стенокардия напряжения 3ФК. Длительное время гипертоническая болезнь с максимальными цифрами 200\\100мм ртст, адаптирован к 130\\70мм ртст. ОИМ, язвенную болезнь, бронхиальную астму - отрицает. В 1995г перенес ОНМК. Постоянно принимает вальсакор 160мг, розувастатин, тромбо АСС, конкор 10мг\\сут. Около месяца стал отмечать примесь крови в стуле, не обследовался. 13.09.2022 в связи с выше перечисленными жалобами обратился к терапевту в КДО, госпитализирован в терапевтическое отделение."
+    },
+    "meta": {},
+    "created_at": "2023-09-20T18:41:07.995653Z",
+    "updated_at": "2023-10-02T15:45:13.154222Z",
+    "inner_id": 10,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 24,
+    "updated_by": 5,
+    "comment_authors": []
+  },
+  {
+    "id": 411,
+    "annotations": [
+      {
+        "id": 21,
+        "completed_by": 5,
+        "result": [
+          {
+            "value": {
+              "start": 98,
+              "end": 116,
+              "text": "Питание избыточное",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "L5Edn7KlZB",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 12,
+              "end": 24,
+              "text": "Вес 105,0 кг",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "1H2dHnCT6U",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 25,
+              "end": 40,
+              "text": "ИМТ 32,41 кг/м2",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "KEQYrCgbJa",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 541,
+              "end": 580,
+              "text": "границы сердца расширены влево на 1.0см",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "ERdyDng4dE",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 667,
+              "end": 705,
+              "text": "Артериальное давление 160/95 мм. рт.ст",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "NQGwerAdd8",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 769,
+              "end": 801,
+              "text": "Язык сухой, обложен белымналётом",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "HQAFR1JEFf",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2023-10-02T15:46:15.959659Z",
+        "updated_at": "2023-10-02T15:46:15.959675Z",
+        "draft_created_at": "2023-10-02T15:45:27.406603Z",
+        "lead_time": 59.809,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "79fb4f5e-b999-4b60-bc53-603a875bea93",
+        "import_id": null,
+        "last_action": null,
+        "task": 411,
+        "project": 24,
+        "updated_by": 5,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "file_upload": "fd3a9765-4144254808_eval.txt",
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "text": "Рост 180 см.Вес 105,0 кг.ИМТ 32,41 кг/м2. Температура тела при поступлении 36,5 С.Сознание ясное. Питание избыточное. Развитие ПЖК умеренное. Кожные покровы, видимые слизистые физиологической окраски, нормальной окраски. Лимфатические узлы: шейные,подчелюстные, подмышечные, надключичные не увеличены, безболезненные, не спаяны между собой. Отёков нет. Система органов дыхания: границы лёгких в пределах нормы. ЧДД 18в мин. Перкуторный звук легочный. При аускультации лёгких дыхание визикулярное, хрипов нет. Система органов кровообращения: границы сердца расширены влево на 1.0см. При аускультации сердечные тоны ясные, ритм правильный, с частотой - 68ударов в мин. Артериальное давление 160/95 мм. рт.ст. на обеих руках. Система органов пищеварения: аппетит хороший. Язык сухой, обложен белымналётом. Живот при пальпации мягкий, безболезненный. Печень не увеличена, безболезненная. Селезёнка не пальпируется. Стул: оформленный. Мочеполовая система: область почек не изменена. Симптом поколачивания отрицательный с обеих сторон. Дизурии нет. Неврологический статус: Память сохранена. Сознание ясное. Менингеальных знаков нет. Язык по средней линии."
+    },
+    "meta": {},
+    "created_at": "2023-09-20T18:41:07.995677Z",
+    "updated_at": "2023-10-02T15:46:16.038721Z",
+    "inner_id": 11,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 24,
+    "updated_by": 5,
+    "comment_authors": []
+  },
+  {
+    "id": 412,
+    "annotations": [
+      {
+        "id": 22,
+        "completed_by": 5,
+        "result": [
+          {
+            "value": {
+              "start": 205,
+              "end": 224,
+              "text": "аппендэктомия 2021г",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "UZWY3eBR0L",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 671,
+              "end": 724,
+              "text": "головные боли в затылочной области давящего характера",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "dPOzjL_qzx",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 726,
+              "end": 734,
+              "text": "слабость",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "1UHc3gBzCj",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 795,
+              "end": 837,
+              "text": " Максимальные цифры АД - 160/110 мм рт. ст",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "JLGDJGc3o3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2023-10-02T15:47:08.487706Z",
+        "updated_at": "2023-10-02T15:47:08.487722Z",
+        "draft_created_at": "2023-10-02T15:46:33.707285Z",
+        "lead_time": 49.575,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "e626be57-bed2-4f5a-aca2-fe14195ac61e",
+        "import_id": null,
+        "last_action": null,
+        "task": 412,
+        "project": 24,
+        "updated_by": 5,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "file_upload": "8de4876e-4144254808_anam.txt",
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "text": "Анамнез жизни Особенности развития отсутствуют. Перенесенные заболевания: ОРВИ, Ковид 2021г.  ОНМК, ОИМ, СД, ЯБЖ и 12 перстной кишки , онкологические заболевания, бронхиальная астма- отрицает.  Операции : аппендэктомия 2021г.  Семейный анамнез: отец умер в 49 ОКС, мать умерла в 55от рака груди.  Вредныепривычки:отрицает.  Эпид.анамнез:тифы, малярию, туберкулез, гепатит, венерические заболевания отрицает. В эпид.районы за последние два года не выезжал. Контакт с инфекционными больными за последние 14 календарных дней отрицает.  Экспертный анамнез: открытого л\\н на руках нет, л\\н не нужен. Анамнез заболевания Считает себя больным более 20 лет, когда начал отмечать головные боли в затылочной области давящего характера, слабость, обращался к терапевту, были зафиксированы высокие цифры АД. Максимальные цифры АД - 160/110 мм рт. ст. Целевое АД - 130/90 мм.рт. ст. Постоянно принимает Кардасал 10 мг утром, при повышении АД - Капотен 2,5 мг. Со слабым положительным эффектом. Настоящее ухудшение состояния в течение недели, когда появились выше перечисленные жалобы, в связи с чем 21.10.2022 госпитализирован в терапевтическое отделение."
+    },
+    "meta": {},
+    "created_at": "2023-09-20T18:41:07.995702Z",
+    "updated_at": "2023-10-02T15:47:08.552863Z",
+    "inner_id": 12,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 24,
+    "updated_by": 5,
+    "comment_authors": []
+  },
+  {
+    "id": 413,
+    "annotations": [
+      {
+        "id": 23,
+        "completed_by": 5,
+        "result": [
+          {
+            "value": {
+              "start": 12,
+              "end": 23,
+              "text": "Вес 85,0 кг",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "mUJD6Q1slJ",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 24,
+              "end": 39,
+              "text": "ИМТ 34,93 кг/м2",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "ua4VFRZzl6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 236,
+              "end": 256,
+              "text": "ЧДД 20 в мин в покое",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "puY24qngUN",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 309,
+              "end": 324,
+              "text": "дыхание жёсткое",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "ASItd_MnVW",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 326,
+              "end": 373,
+              "text": "\"застойные\" хрипы в нижних отделах с 2-х сторон",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "ra2lzI8qjh",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 408,
+              "end": 447,
+              "text": "Границы сердца расширены влево на 2.0см",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "mnwzy8yk4K",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 466,
+              "end": 491,
+              "text": "сердечные тоны приглушены",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "eP051uPjnt",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2023-10-02T15:48:07.367790Z",
+        "updated_at": "2023-10-02T15:48:07.367806Z",
+        "draft_created_at": "2023-10-02T15:47:22.001096Z",
+        "lead_time": 55.782,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "f61904db-e50d-4256-8f9e-e08245297a6c",
+        "import_id": null,
+        "last_action": null,
+        "task": 413,
+        "project": 24,
+        "updated_by": 5,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "file_upload": "16e13293-4143331287_eval.txt",
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "text": "Рост 156 см.Вес 85,0 кг.ИМТ 34,93 кг/м2. Сознание ясное. Т тела при поступлении 3665 С. Кожные покровы, видимые слизистые бледные. Лимфоузлы мануально не увеличены. Отёков нет.  Система органов дыхания: Границы лёгких в пределах нормы. ЧДД 20 в мин в покое. Перкуторный звук легочный. При аускультации лёгких дыхание жёсткое, \"застойные\" хрипы в нижних отделах с 2-х сторон.  Система органов кровообращения: Границы сердца расширены влево на 2.0см. При аускультации сердечные тоны приглушены, ритм правильный, с частотой - 66 ударов в мин. Артериальное давление 120/80 мм. рт.ст. на обеих руках.  Система органов пищеварения: Аппетит сохранен. Язык влажный, чистый. Живот при пальпации мягкий, безболезненный. Печень не увеличена, безболезненная. Селезёнка не пальпируется. Стул: в норме.  Мочеполовая система: Область почек не изменена. Симптом поколачивания отрицательный с обеих сторон. Дизурии нет.  Неврологический статус: Память сохранена. Сознание ясное. Менингеальных знаков нет. Язык по средней линии."
+    },
+    "meta": {},
+    "created_at": "2023-09-20T18:41:07.995726Z",
+    "updated_at": "2023-10-02T15:48:07.434053Z",
+    "inner_id": 13,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 24,
+    "updated_by": 5,
+    "comment_authors": []
+  },
+  {
+    "id": 414,
+    "annotations": [
+      {
+        "id": 24,
+        "completed_by": 5,
+        "result": [
+          {
+            "value": {
+              "start": 91,
+              "end": 95,
+              "text": "ОРВИ",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "tNfsk0G0Xn",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 97,
+              "end": 132,
+              "text": "хроническая железодефицитная анемия",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "vm6-cOk2w-",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 200,
+              "end": 213,
+              "text": "OU- артифакия",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "FSbDo6wjui",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 511,
+              "end": 542,
+              "text": "ИБС: Стенокардия напряжения 2ФК",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "WjltCcKrrU",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 544,
+              "end": 609,
+              "text": "гипертоническая болезнь с максимальными цифрами АД 160\\100мм ртст",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "koSbKFCQB_",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 641,
+              "end": 654,
+              "text": "Перенесла ОИМ",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "uwTqy0I8Ku",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2023-10-02T15:49:10.240806Z",
+        "updated_at": "2023-10-02T15:49:10.240821Z",
+        "draft_created_at": "2023-10-02T15:48:28.455754Z",
+        "lead_time": 56.759,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "f319cae0-64d2-4bd8-a84b-34b1876a6e55",
+        "import_id": null,
+        "last_action": null,
+        "task": 414,
+        "project": 24,
+        "updated_by": 5,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "file_upload": "b18299ea-4143331287_anam.txt",
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "text": "Анамнез жизни особенности развития отсутствуют.  Перенесенные и сопутствующие заболевания: ОРВИ, хроническая железодефицитная анемия, принимает курсами сорбифер дурулес 1таб х 2раза в день. Операции: OU- артифакия.   Вредные привычки: отрицает.  Эпид . анамнез : тифы , малярию , туберкулез , гепатит, венерические заболевания отрицает . В эпид.районы за последние два года не выезжала. Контакт с инфекционными больными за последние 14календарных дней отрицает.  Анамнез заболевания В анамнезе длительное время ИБС: Стенокардия напряжения 2ФК, гипертоническая болезнь с максимальными цифрами АД 160\\100мм ртст, адаптирована к 120\\80мм ртст. Перенесла ОИМ неизвестной давности (выявлен по данным ЭХО-КГ). ОНМК, сахарный диабет, бронхиальную астму, язвенную болезнь - отрицает. Постоянно принимает Диувер 10мг утром, Конкор 5мг утром, Кардикет 20мг х 2раза в день, Кардиомагнил 75мг вечером, Аторвастатин 20мг вечером. Настоящее ухудшение состояния в течение месяца, когда вновь появились и стали прогрессировать выше перечисленные жалобы, в связи с чем 11.11.2022 по ЧСМП госпитализирована в терапевтическое отделение."
+    },
+    "meta": {},
+    "created_at": "2023-09-20T18:41:07.995750Z",
+    "updated_at": "2023-10-02T15:49:10.306986Z",
+    "inner_id": 14,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 24,
+    "updated_by": 5,
+    "comment_authors": []
+  },
+  {
+    "id": 415,
+    "annotations": [
+      {
+        "id": 25,
+        "completed_by": 5,
+        "result": [
+          {
+            "value": {
+              "start": 12,
+              "end": 25,
+              "text": "Вес 104,0 кг.",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "xkIqOgBi5Q",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 25,
+              "end": 40,
+              "text": "ИМТ 39,14 кг/м2",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "Yc5OHrkqF9",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 308,
+              "end": 323,
+              "text": "дыхание жёсткое",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "INoK8EfI2O",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 370,
+              "end": 409,
+              "text": "Границы сердца расширены влево на 2.0см",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "OHWwtRoX2H",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 428,
+              "end": 453,
+              "text": "сердечные тоны приглушены",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "49nyzgMGso",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 502,
+              "end": 541,
+              "text": "Артериальное давление 170/100 мм. рт.ст",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "9k8WcXYbds",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 673,
+              "end": 726,
+              "text": "увеличен в объёме за счёт подкожно-жировой клетчатки.",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "ON6hYcC3l9",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2023-10-02T15:50:19.668779Z",
+        "updated_at": "2023-10-02T15:50:19.668794Z",
+        "draft_created_at": "2023-10-02T15:49:21.911273Z",
+        "lead_time": 66.662,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "0e2f950a-d1b9-4265-a14a-39c2aa2599e1",
+        "import_id": null,
+        "last_action": null,
+        "task": 415,
+        "project": 24,
+        "updated_by": 5,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "file_upload": "c4fa406f-4142407766_eval.txt",
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "text": "Рост 163 см.Вес 104,0 кг.ИМТ 39,14 кг/м2. Сознание ясное. Т тела при поступлении 36,5 С. Кожные покровы, видимые слизистые обычной окраски. Лимфоузлы не увеличены. Отёков нет.  Система органов дыхания: Границы лёгких в пределах нормы. ЧДД 18 в мин в покое. Перкуторный звук легочный. При аускультации лёгких дыхание жёсткое, хрипов нет.  Система органов кровообращения: Границы сердца расширены влево на 2.0см. При аускультации сердечные тоны приглушены, ритм правильный, с частотой - 70 ударов в мин. Артериальное давление 170/100 мм. рт.ст. на обеих руках.  Система органов пищеварения: Аппетит сохранен. Язык влажный, чистый. Живот при пальпации мягкий, безболезненный, увеличен в объёме за счёт подкожно-жировой клетчатки. Печень не увеличена, безболезненная. Селезёнка не пальпируется. Стул: в норме.  Мочеполовая система: Область почек не изменена. Симптом поколачивания отрицательный с обеих сторон. Дизурии нет.  Неврологический статус: Память сохранена. Сознание ясное. Менингеальных знаков нет. Язык по средней линии."
+    },
+    "meta": {},
+    "created_at": "2023-09-20T18:41:07.995773Z",
+    "updated_at": "2023-10-02T15:50:19.736640Z",
+    "inner_id": 15,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 24,
+    "updated_by": 5,
+    "comment_authors": []
+  },
+  {
+    "id": 416,
+    "annotations": [
+      {
+        "id": 26,
+        "completed_by": 5,
+        "result": [
+          {
+            "value": {
+              "start": 91,
+              "end": 95,
+              "text": "ОРВИ",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "cTXxPAH9yn",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 108,
+              "end": 121,
+              "text": "аппендэктомия",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "Qxxfo-VcRq",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 123,
+              "end": 147,
+              "text": "удаление правого яичника",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "TgyIxyszk0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 148,
+              "end": 162,
+              "text": "(разрыв кисты)",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "nsAji4lWAK",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 172,
+              "end": 198,
+              "text": "резекция сигмовидной кишки",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "AAOqX14_eA",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 217,
+              "end": 230,
+              "text": "дивертикулеза",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "8zKaX3Sqwa",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 561,
+              "end": 625,
+              "text": "гипертоническая болезнь с максимальным цифрами АД 220\\120мм ртст",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "lmaUCnHP9k",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2023-10-02T15:51:31.496091Z",
+        "updated_at": "2023-10-02T15:51:31.496108Z",
+        "draft_created_at": "2023-10-02T15:50:35.093926Z",
+        "lead_time": 67.032,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "968bc36a-4cf0-4174-bf41-88a3d44eaac7",
+        "import_id": null,
+        "last_action": null,
+        "task": 416,
+        "project": 24,
+        "updated_by": 5,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "file_upload": "3e107c01-4142407766_anam.txt",
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "text": "Анамнез жизни особенности развития отсутствуют.  Перенесенные и сопутствующие заболевания: ОРВИ.  Операции: аппендэктомия, удаление правого яичника (разрыв кисты) в 2012г, резекция сигмовидной кишки в 2017г по поводу дивертикулеза.   Вредные привычки: отрицает.  Эпид . анамнез : тифы , малярию , туберкулез , гепатит, венерические заболевания отрицает . В эпид.районы за последние два года не выезжала. Контакт с инфекционными больными за последние 14календарных дней отрицает. Экспертный анамнез: не работает, пенсионер.  Анамнез заболевания Длительное время гипертоническая болезнь с максимальным цифрами АД 220\\120мм ртст, целевые цифры АД 140\\80мм ртст. Постоянно принимает лористу 50мг вечером. ОНМК, ОИМ, сахарный диабет, бронхиальную астму, язвенную болезнь - отрицает. Настоящее ухудшение состояния в течение 5дней, когда появились выше перечисленные жалобы, в связи с чем 15.11.2022 по СМП госпитализирована в терапевтическое отделение."
+    },
+    "meta": {},
+    "created_at": "2023-09-20T18:41:07.995795Z",
+    "updated_at": "2023-10-02T15:51:31.567975Z",
+    "inner_id": 16,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 24,
+    "updated_by": 5,
+    "comment_authors": []
+  },
+  {
+    "id": 417,
+    "annotations": [
+      {
+        "id": 27,
+        "completed_by": 5,
+        "result": [
+          {
+            "value": {
+              "start": 738,
+              "end": 754,
+              "text": " дыхание жесткое",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "fB0dlcALh_",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 757,
+              "end": 802,
+              "text": "влажные хрипы в нижних отделах с обеих сторон",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "kLHUYIeUSl",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 840,
+              "end": 880,
+              "text": "пульсация сонных артерий не определяется",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "_Kba2gyI2_",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1137,
+              "end": 1157,
+              "text": "склонность к запорам",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "Mkpq5k9thf",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 1233,
+              "end": 1278,
+              "text": "Учащенное , но безболезненное мочеиспускание ",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "fBH0yJaXWt",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2023-10-02T15:53:47.068468Z",
+        "updated_at": "2023-10-02T15:53:47.068477Z",
+        "draft_created_at": "2023-10-02T15:52:12.923629Z",
+        "lead_time": 129.581,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "a822c5a0-612f-435a-9a6b-8f796d188d2c",
+        "import_id": null,
+        "last_action": null,
+        "task": 417,
+        "project": 24,
+        "updated_by": 5,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "file_upload": "7b5d070d-4141484245_eval.txt",
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "text": "Состояние средней тяжести, стабильное . Положение : активное . В сознании . Телосложение нормостеническое . Температура тела до 36,5 С . Подкожно - жировая клетчатка выражена умеренно . Кожные покровы физиологической окраски . Костно - мышечная система без особенностей . Лимфоузлы при пальпации не увеличены . Щитовидная железа не увеличена . Отёков нет . Система органов дыхания Деформации не наблюдается . Межреберные промежутки не увеличены . Движения симметричны . Дыхание не затруднено . Дыхательная экскурсия не усилена . Вспомогательная мускулатура в дыхании не участвует . ЧДД 19 в мин в покое . При пальпации гр . клетка - безболезненная . Голосовое дрожание в норме . При перкуссии звук ясный легочный . При аускультации лёгких дыхание жесткое , влажные хрипы в нижних отделах с обеих сторон . Система кровообращения При осмотре пульсация сонных артерий не определяется . Пульс , удовлетворительного наполнения и напряжения , с частотой 80 уд в минуту . Артериальное давление 145/80 мм . рт . ст на обеих руках . Язык влажный , чистый . Живот мягкий , безболезненный . Печень не увеличена . Селезёнка не пальпируется . Стул : склонность к запорам . Мочеполовая система Симптом поколачивания отрицательный с обеих сторон . Учащенное , но безболезненное мочеиспускание . Память не снижена . Контакту доступен"
+    },
+    "meta": {},
+    "created_at": "2023-09-20T18:41:07.995820Z",
+    "updated_at": "2023-10-02T15:53:47.133439Z",
+    "inner_id": 17,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 24,
+    "updated_by": 5,
+    "comment_authors": []
+  },
+  {
+    "id": 418,
+    "annotations": [
+      {
+        "id": 28,
+        "completed_by": 5,
+        "result": [
+          {
+            "value": {
+              "start": 578,
+              "end": 602,
+              "text": "страдает ГБ, макс 150\\90",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "vVF04juAIl",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 774,
+              "end": 815,
+              "text": "овышения АД появилась заложенность в ушах",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "IAJuM6XZ5j",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2023-10-02T15:54:32.576637Z",
+        "updated_at": "2023-10-02T15:54:33.456772Z",
+        "draft_created_at": "2023-10-02T15:54:09.875360Z",
+        "lead_time": 42.926,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "c84bf568-f8f2-473a-971e-577a6d571812",
+        "import_id": null,
+        "last_action": null,
+        "task": 418,
+        "project": 24,
+        "updated_by": 5,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "file_upload": "c1aeeaa8-4141484245_anam.txt",
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "text": "Анамнез жизни   Росла и развивалась по возрасту. Сопутствующие и перенесенные заболевания: Онкологические заболевания, сахарный диабет ,бронхиальную астму, язвенную болезнь-отрицает.Операции: отрицает .Аллергологический анамнез: не отягощен.Вредные привычки: отрицает.Наследственность:не отягощен. Эпид. анамнез: тифы, малярию, туберкулез, гепатит В и С, венерические заболевания отрицает. В эпид. районы за последние полгода не выезжал. Контакт с инфекционными больными за последние 14 дней-отрицает.Экспертный анамнез: не работает. Пенсионер   Анамнез заболевания   Длительно страдает ГБ, макс 150\\90, базисной терапии привержена, получает Беталок ЗОК 50 мг, эпизодически капотен при кризах. Со слов, отметила ухудшение состояния в течение последних суток, когда на фоне повышения АД появилась заложенность в ушах. АД было 160\\90, выписла допрлнительно моксонидин 0,2, без улучшения, обратилась в приемное отделение, госпитализирована в терапию."
+    },
+    "meta": {},
+    "created_at": "2023-09-20T18:41:07.995844Z",
+    "updated_at": "2023-10-02T15:54:33.524205Z",
+    "inner_id": 18,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 24,
+    "updated_by": 5,
+    "comment_authors": []
+  },
+  {
+    "id": 419,
+    "annotations": [
+      {
+        "id": 29,
+        "completed_by": 5,
+        "result": [
+          {
+            "value": {
+              "start": 12,
+              "end": 23,
+              "text": "Вес 88,0 кг",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "2p9Sfj7gNS",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 24,
+              "end": 39,
+              "text": "ИМТ 32,32 кг/м2",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "uSKIZAczYy",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 130,
+              "end": 174,
+              "text": "Подкожно-жировая клетчатка выражена умеренно",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "oafYynPjP6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 645,
+              "end": 678,
+              "text": "дыхание жесткое, ослаблено в н/о.",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "je3HA3uKW-",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 714,
+              "end": 754,
+              "text": "пульсация сонных артерий не определяется",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "QIdFJzzfMT",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 933,
+              "end": 958,
+              "text": "сердечные тоны приглушены",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "52A7tYm5s8",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2023-10-02T15:57:14.391723Z",
+        "updated_at": "2023-10-02T15:57:14.391739Z",
+        "draft_created_at": "2023-10-02T15:55:12.893140Z",
+        "lead_time": 154.948,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "4229299c-cb7e-4d31-851d-78d3da93cd46",
+        "import_id": null,
+        "last_action": null,
+        "task": 419,
+        "project": 24,
+        "updated_by": 5,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "file_upload": "2d7f7560-4140560724_eval.txt",
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "text": "Рост 165 см.Вес 88,0 кг.ИМТ 32,32 кг/м2. Положение: активное. В сознании. Телосложение нормостеническое . Температура тела 36,6С. Подкожно-жировая клетчатка выражена умеренно. Кожный покров физиологической окраски. Костно-мышечная система без особенностей. Л/у не изменеы. Система органов дыхания .Деформации не наблюдается. Межреберные промежутки не увеличены. Движения симметричны. Дыхание не затруднено. Дыхательная экскурсия не усилена. Вспомогательная мускулатура в дыхании не участвует. ЧДД 18 в мин в покое. При пальпации гр. клетка - безболезненная. Голосовое дрожание в норме. При перкуссии звук ясный легочный. При аускультации лёгких дыхание жесткое, ослаблено в н/о. Система кровообращения При осмотре пульсация сонных артерий не определяется. Вены шеи не изменены, не пульсируют. Сердечный толчок не определяется. При пальпации дрожание грудной клетки не определяется. Пульсация печени не определяется. При аускультации сердечные тоны приглушены, ритм правильный. ЧСС 75 уд в мин. Артериальное давление 120/80 мм. рт. ст на обеих руках. Система пищеварения Аппетит сохранен. Язык влажный. Живот мягкий, немного безболезненный. Поверхностный венозный рисунок не усилен. Печень по нижнему краю рёберной дуги. Селезёнка не пальпируетя. Стул регулярный, оформленный, без примесей. Мочеполовая система Симптом поколачивания отрицательный с обеих сторон. Мочеиспускание безболезненное.Неврологический статус: Больная в сознании, ориентация в месте, времени, собственной личности сохранена. Память не снижена. Контакту доступна."
+    },
+    "meta": {},
+    "created_at": "2023-09-20T18:41:07.995869Z",
+    "updated_at": "2023-10-02T15:57:14.458941Z",
+    "inner_id": 19,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 24,
+    "updated_by": 5,
+    "comment_authors": []
+  },
+  {
+    "id": 420,
+    "annotations": [
+      {
+        "id": 30,
+        "completed_by": 5,
+        "result": [
+          {
+            "value": {
+              "start": 187,
+              "end": 197,
+              "text": "липосакция",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "ewmmjt-FZV",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 250,
+              "end": 274,
+              "text": "АД, макс 145\\90 мм рт ст",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "hUENKUCmyi",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 377,
+              "end": 400,
+              "text": "тик и птоз левого глаза",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "qEUXVdXplL",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 402,
+              "end": 421,
+              "text": "онемение левой щеки",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "OBkx8jVk6U",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "value": {
+              "start": 422,
+              "end": 471,
+              "text": " сильные головные боли, усиливающиеся при стрессе",
+              "labels": [
+                "Симптом"
+              ]
+            },
+            "id": "OLV5Jkcso0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "origin": "manual"
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2023-10-02T15:58:19.112594Z",
+        "updated_at": "2023-10-02T15:58:19.112610Z",
+        "draft_created_at": "2023-10-02T15:57:35.039035Z",
+        "lead_time": 59.139,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "ecffeae2-50f8-41c5-8bd6-beecf785dd86",
+        "import_id": null,
+        "last_action": null,
+        "task": 420,
+        "project": 24,
+        "updated_by": 5,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": null
+      }
+    ],
+    "file_upload": "40d35e9b-4140560724_anam.txt",
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "text": "Анамнез жизни Хронические заболевания: Гипертоническая болезнь. Препараты не принимает. Вредные привычки отрицает. Наследственность: отец- язва желудкаЭпид.анамнез:не отягощен. Операции: липосакция 2021г.  Анамнез заболевания Около 3-х лет повышение АД, макс 145\\90 мм рт ст, адаптирована 110\\70 мм рт ст. Базисной терапии не привержена. Последние 3 месяца появились жалобы на тик и птоз левого глаза, онемение левой щеки, сильные головные боли, усиливающиеся при стрессе. Данные жалобы наросли в течение последнего месяца, в связи с чем обратилась."
+    },
+    "meta": {},
+    "created_at": "2023-09-20T18:41:07.995890Z",
+    "updated_at": "2023-10-02T15:58:19.180264Z",
+    "inner_id": 20,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 24,
+    "updated_by": 5,
+    "comment_authors": []
+  }
+]

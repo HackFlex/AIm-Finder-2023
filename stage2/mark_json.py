@@ -87,8 +87,10 @@ class MarkJSON:
 
 
 if __name__ == '__main__':
-    file_origin = 'epicrisis.xml'
-    file_result = 'epicrisis_result.json'
+    # file_origin = 'epicrisis.xml'
+    # file_result = 'epicrisis_result.json'
+    file_origin = 'dataset/Эпикризы_пример_19_05_2023/Эпикриз_1932660249_v1.xml'
+    file_result = 'dataset/Эпикризы_пример_19_05_2023/Эпикриз_1932660249_v1_result.json'
 
     mark_json = MarkJSON(file_origin, file_result)
     mark_json.create_mark()
