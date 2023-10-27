@@ -49,80 +49,59 @@ class LabelToNN:
                     word = text[start_counter:end_counter]
 
                 if len(word) > 0:
-
-                    if len(bounds) > 0:
-                        bound_left = bounds[0][0]
-                        bound_right = bounds[0][1]
-
-                        # 3
-                        if bound_left <= start_counter < bound_right:
-                                        
-                            words.append(word)
-                            
-                            if bound_left == start_counter:
-                                labels.append(START_TOKEN)
-                            else:
-                                labels.append(CONTINUE_TOKEN)
-
-                        # ex
-                        elif start_counter < bound_left < end_counter:
-
-                            word1 = text[start_counter:bound_left]
-                            if len(word1) > 0:
-                                words.append(word1)
-                            labels.append(EMPTY_TOKEN)
-
-                            word2 = text[bound_left:end_counter]
-                            if len(word2) > 0:
-                                words.append(word2)
-                            labels.append(START_TOKEN)
-
-                        # 1
-                        elif start_counter < bound_left:
-
-                            words.append(word)
-                            labels.append(EMPTY_TOKEN)
-
-                        if bound_right < start_counter:
-                            bounds.pop(0)
-
-                    else:
-                        words.append(word)
-                        labels.append(EMPTY_TOKEN)
+                    self.__add_word_and_label(word, start_counter, end_counter,
+                                              words, labels, bounds)
 
                 start_counter += end_counter - start_counter + 1
             
-            for i in range(len(words)):
-                print(f'{i:3}: {words[i]} -> {labels[i]}')
+            self.result['words'].append(words)
+            self.result['labels'].append(labels)
 
-            print(len(text.split()))
+    
+    def __add_word_and_label(self, word: str, start_counter: int, end_counter: int,
+                             words: list, labels: list, bounds: list) -> None:
+        if len(bounds) == 0:
+            words.append(word)
+            labels.append(EMPTY_TOKEN)
+            return
 
-            break
+        bound_left = bounds[0][0]
+        bound_right = bounds[0][1]
 
-
-    def __create_bound_dict(self, text) -> tuple[dict, dict]:
-        start_word = {}
-        end_word = {}
-
-        start_counter = 0
-        index = 0
-        while start_counter < len(text):
-            end_counter = text.find(' ', start_counter)
-            if end_counter == -1:
-                word = text[start_counter:]
-                end_counter = len(text)
-            else:
-                word = text[start_counter:end_counter]
+        # 3
+        if bound_left <= start_counter < bound_right:
+                        
+            words.append(word)
             
-            # print(f'"{word}" [{start_counter}, {end_counter - 1}]')
-            start_word[start_counter] = index
-            # end_word[end_counter] = index
-            end_word[index] = end_counter
+            if bound_left == start_counter:
+                labels.append(START_TOKEN)
+            else:
+                labels.append(CONTINUE_TOKEN)
 
-            start_counter += end_counter - start_counter + 1
-            index += 1
+        # ex
+        elif start_counter < bound_left < end_counter:
 
-        return start_word, end_word
+            word1 = word[:bound_left - start_counter]
+            if len(word1) > 0:
+                words.append(word1)
+            labels.append(EMPTY_TOKEN)
+
+            word2 = word[bound_left - start_counter:]
+            if len(word2) > 0:
+                words.append(word2)
+            labels.append(START_TOKEN)
+
+        # 1
+        elif start_counter < bound_left:
+
+            words.append(word)
+            labels.append(EMPTY_TOKEN)
+
+        if bound_right < start_counter:
+            bounds.pop(0)
+            self.__add_word_and_label(word, start_counter, end_counter,
+                                      words, labels, bounds)
+
 
 
     def __get_next_item(self, data: list) -> dict:
@@ -151,3 +130,10 @@ if __name__ == '__main__':
     trans.load(filename)
     trans.run()
     
+    for i in range(len(trans.result['words'])):
+        print(f'Part {i}')
+        words = trans.result['words'][i]
+        labels = trans.result['labels'][i]
+        for j in range(len(words)):
+            print(f'{labels[j]}: "{words[j]}"')
+        print()
