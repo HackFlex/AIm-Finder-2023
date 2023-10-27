@@ -1,5 +1,8 @@
 import json
 
+EMPTY_TOKEN = 0
+START_TOKEN = 1
+CONTINUE_TOKEN = 2
 
 def debug(sd: dict, words):
     for key, value in sd.items():
@@ -31,16 +34,12 @@ class LabelToNN:
 
             # 2
             text = self.__get_text(item)
-            # start_word, end_word = self.__create_bound_dict(text)
 
-            start_word = {}
-            end_word = {}
             words = []
             labels = []
 
             start_counter = 0
-            index = 0
-            flag = 0
+
             while start_counter < len(text):
                 end_counter = text.find(' ', start_counter)
                 if end_counter == -1:
@@ -49,81 +48,54 @@ class LabelToNN:
                 else:
                     word = text[start_counter:end_counter]
 
-                if len(bounds) > 0:
-                    # 3
-                    if bounds[0][0] <= start_counter < bounds[0][1]:
-                                    
-                        if len(word) > 0:
+                if len(word) > 0:
+
+                    if len(bounds) > 0:
+                        bound_left = bounds[0][0]
+                        bound_right = bounds[0][1]
+
+                        # 3
+                        if bound_left <= start_counter < bound_right:
+                                        
                             words.append(word)
-                            start_word[start_counter] = words[-1]
-                            end_word[words[-1]] = end_counter
-                            index += 1
-                        
-                        if bounds[0][0] == start_counter:
-                            labels.append(1)
-                        else:
-                            labels.append(2)
+                            
+                            if bound_left == start_counter:
+                                labels.append(START_TOKEN)
+                            else:
+                                labels.append(CONTINUE_TOKEN)
 
-                    # ex
-                    elif start_counter < bounds[0][0] < end_counter:
+                        # ex
+                        elif start_counter < bound_left < end_counter:
 
-                        word1 = text[start_counter:bounds[0][0]]
-                        if len(word1) > 0:
-                            words.append(word1)
-                            start_word[start_counter] = words[-1]
-                            end_word[words[-1]] = end_counter
-                            index += 1
-                        labels.append(0)
+                            word1 = text[start_counter:bound_left]
+                            if len(word1) > 0:
+                                words.append(word1)
+                            labels.append(EMPTY_TOKEN)
 
-                        word2 = text[bounds[0][0]:end_counter]
-                        if len(word2) > 0:
-                            words.append(word2)
-                            start_word[start_counter] = words[-1]
-                            end_word[words[-1]] = end_counter
-                            index += 1
-                        labels.append(1)
+                            word2 = text[bound_left:end_counter]
+                            if len(word2) > 0:
+                                words.append(word2)
+                            labels.append(START_TOKEN)
 
-                    # 1
-                    elif start_counter < bounds[0][0]:
+                        # 1
+                        elif start_counter < bound_left:
 
-                        if len(word) > 0:
                             words.append(word)
-                            start_word[start_counter] = words[-1]
-                            end_word[words[-1]] = end_counter
-                            index += 1
-                        labels.append(0)
+                            labels.append(EMPTY_TOKEN)
 
-                    # 4
-                    elif bounds[0][1] < start_counter:
+                        if bound_right < start_counter:
+                            bounds.pop(0)
 
-                        if len(word) > 0:
-                            words.append(word)
-                            start_word[start_counter] = words[-1]
-                            end_word[words[-1]] = end_counter
-                            index += 1
-                        labels.append(0)
-
-
+                    else:
+                        words.append(word)
+                        labels.append(EMPTY_TOKEN)
 
                 start_counter += end_counter - start_counter + 1
             
+            for i in range(len(words)):
+                print(f'{i:3}: {words[i]} -> {labels[i]}')
 
-            for bound_start, bound_end in self.__get_next_bound(item):
-                count = 0
-                index = start_word.get(bound_start, -1)
-                if index == -1:
-                    print(f'ERROR: {bound_start}')
-                    # print(start_word)
-                    debug(start_word, words)
-
-                    exit(1)
-                labels[index] = 1
-                count += 1
-                while end_word[index] <= bound_end:
-                    index += 1
-                    labels[index] = 2
-                    count += 1
-                print(f'{bound_start} -> {bound_end}: {count}')
+            print(len(text.split()))
 
             break
 
