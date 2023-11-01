@@ -14,7 +14,7 @@ def debug(sd: dict, words):
 class LabelToNN:
     def __init__(self) -> None:
         self.data = None
-        self.result = {"words": [], "labels": []}
+        self.result = {"tokens": [], "ner_tags": []}
 
     def load(self, filename) -> None:
         with open(filename) as f:
@@ -49,8 +49,8 @@ class LabelToNN:
 
                 start_counter += end_counter - start_counter + 1
 
-            self.result["words"].append(words)
-            self.result["labels"].append(labels)
+            self.result["tokens"].append(words)
+            self.result["ner_tags"].append(labels)
         return self.result
 
     def _add_word_and_label(
@@ -126,5 +126,5 @@ if __name__ == "__main__":
     translater = LabelToNN()
     translater.load(filename)
     result = translater.run()
-    print(result['words'])
-    print(result['labels'])
+    print(result["tokens"])
+    print(result["ner_tags"])
