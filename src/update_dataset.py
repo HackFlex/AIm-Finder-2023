@@ -1,10 +1,13 @@
 import os
+import sys
 
 from datasets import Dataset, load_dataset
 
+from stage2.labels_to_nn import LabelToNN
+
 
 if __name__ == "__main__":
-    dir_name = "../dataset/HF_dataset/"
+    dir_name = "dataset/HF_dataset/"
     files = os.listdir(dir_name)
     result = {"tokens": [], "ner_tags": []}
 
