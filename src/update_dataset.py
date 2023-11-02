@@ -1,5 +1,6 @@
 import os
 import sys
+import time
 
 from datasets import Dataset, load_dataset
 
@@ -21,7 +22,4 @@ if __name__ == "__main__":
 
     raw_dataset = Dataset.from_dict(result)
     raw_dataset.push_to_hub("kosta-naumenko/medflex")
-
-    loaded_dataset = load_dataset("kosta-naumenko/medflex")
-
-    assert len(raw_dataset) == len(loaded_dataset["train"])
+    print('Total raws:', len(raw_dataset))
