@@ -14,7 +14,7 @@ def run_send(pathJson, taskId):
     # logger.info(process, pathJsonArg, taskIdArg)
     # process.detach()
 
-
+    
     # cmd = f'/app/send.sh {pathJson} {taskId}'
     # cmds = shlex.split(cmd)
     # # print(cmd, cmds)

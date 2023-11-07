@@ -10,19 +10,19 @@ class solver:
         sections = xml.getSections() # [ { 'xPath': "", 'text': "" } ]
         
         
-        print("----")
-        for s in sections:
-            for item in s:
-                print('\033[95m' + item['xPath'] + '\033[0m')
-                print()
-                print(item['name'])
-                print("----")
+        # print("----")
+        # for s in sections:
+        #     for item in s:
+        #         print('\033[95m' + item['xPath'] + '\033[0m')
+        #         print()
+        #         print(item['name'])
+        #         print("----")
             
         tokenizeText = xml.getTokenizeText()
-        print('\033[95m' + 'Tokenize Text' + '\033[0m')
-        print(tokenizeText)
-        print("----")
-        print(NN().searchSymptoms(tokenizeText))
+        # print('\033[95m' + 'Tokenize Text' + '\033[0m')
+        # print(tokenizeText)
+        # print("----")
+        # print(NN().searchSymptoms(tokenizeText))
         
         ##processingOutputNN and generate json
         ##send json
