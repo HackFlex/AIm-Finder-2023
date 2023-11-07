@@ -39,3 +39,44 @@ def run_send(pathJson, taskId):
 
 # if __name__ == '__main__':
 #     MedFlexSolve("/app/test_result.json", "10011")
+
+def tmp(base_text: str, result: dict or None):
+    
+    if not result:
+        return None
+    
+    data = []
+    text = result['text']
+
+    for start, end in result['symptoms']:
+        
+        symptom = {
+            'start': 0,
+            'end': 0,
+            'text': ''
+        }
+        tokens = text[start:end].split()
+
+        index = base_text.rfind(' ', start)
+        if index < 0:
+            index = 0
+        
+        index = base_text.find(tokens[0], index)
+        if index < 0:
+            print(f'Not found: start={start} text="{text[start:end]}"')
+            continue
+
+        symptom['start'] = index
+
+        index = base_text.find(tokens[-1], index)
+        if index < 0:
+            continue
+
+        symptom['end'] = index + len(tokens[-1])
+
+        symptom['text'] = base_text[symptom['start']:symptom['end']]
+
+        print(symptom)
+        data.append(symptom)
+        
+    return data
