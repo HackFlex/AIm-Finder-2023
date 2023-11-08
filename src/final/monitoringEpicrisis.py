@@ -16,34 +16,55 @@ def startBaseline(baselineDir):
     cmds = shlex.split(cmd)
     subprocess.run(cmds, start_new_session=True)
     time.sleep(1)
-    ###test
-    # cmd = 'docker exec -it baseline sh -c "python baseline.py start --contest=finder --stage=qualifying --type=estimated-training --count=10 --timeout=10"'
-    ### final
+    #test
+    cmd = 'docker exec -it baseline sh -c "python baseline.py start --contest=finder --stage=final --type=estimated-training --count=90 --timeout=20"'
+    ## final
     # cmd = 'docker exec -it baseline sh -c "python baseline.py start --contest=finder --stage=final --type=challenge"' 
-    # cmds = shlex.split(cmd)
-    # subprocess.run(cmds, start_new_session=True)
+    cmds = shlex.split(cmd)
+    subprocess.run(cmds, start_new_session=True)
+    time.sleep(2)
+    pass
+
+def getEmptyXmlInfo(name, succes):
+    xml = {'name': name, 'succes': succes}
+    return xml
+
+def XmlSuccesProcesed(processedXml, pathXml):
+    for xml in processedXml:
+        if (xml['name'] == pathXml and xml['succes'] == True):
+            return True
+    return False
 
 if __name__ == '__main__':
     args = sys.argv[1:]
     baselineDir = args[0]
     
     config = configparser.ConfigParser()
-    pathXml = config.read(baselineDir + '/tmp/currentepicrisispath.cfg')
-    
+    config.read(baselineDir + '/tmp/currentepicrisispath.cfg')
+    pathXml = config['DEFAULT']['currentepicrisispath']
+    sessionStarted = False
     startBaseline(baselineDir)
-    
+    processedXml = []
     try:
         while True:
             config.read(baselineDir + '/tmp/currentepicrisispath.cfg')
-            tmp = config['DEFAULT']['currentepicrisispath']
-            if (tmp != pathXml):
-                pathXml = tmp
+            tmpPathXml = config['DEFAULT']['currentepicrisispath']    
+            if (sessionStarted == False):
+                if (tmpPathXml != pathXml):
+                    sessionStarted = True
+            elif (XmlSuccesProcesed(processedXml, tmpPathXml) == False):
+                time.sleep(1)
+                pathXml = tmpPathXml
                 nameXml = pathXml[4:]
                 taskId = nameXml.split("/")[-1].split("_")[-1].split(".")[0]
                 try:
                     solver().solve(baselineDir + nameXml, taskId)
-                except:
+                    processedXml.append(getEmptyXmlInfo(pathXml, True))
+                except Exception as e:
+                    processedXml.append(getEmptyXmlInfo(pathXml, False))
                     print(f'Error in solver. xmlPath={baselineDir + nameXml}, taskId={taskId}')
+                    print(str(e))
+                    print()
             time.sleep(1)
     except KeyboardInterrupt:
         pass

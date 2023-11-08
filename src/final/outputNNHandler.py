@@ -1,41 +1,32 @@
 import shlex
 import subprocess
 
-def run_send(pathJson, taskId):
+class outNNHandler:
+    def __init(self):
+        pass
 
-    # Здесь нужно вызвать наш скрипт: 
-    #   MedFlex(current_epicrisis_path, data["taskId"])
-    # subprocess.call(['sh', './test.sh'])
-    # cmd=f'python baseline.py send --path="/app/test_result.json" --taskid="{data["taskId"]}"'
-    # logger.info(cmd)
-    # subprocess.call(cmd)
+    def _getSymptomJson(self, xPath, start, end, name) -> dict:
+        return {
+            'xPath': xPath,
+            'start': start,
+            'end': end,
+            'name': name,
+            'decorCode': 'symptom',
+            'code': ''
+        }
 
-    # process = subprocess.run(["/app/send.sh", pathJsonArg, taskIdArg])
-    # logger.info(process, pathJsonArg, taskIdArg)
-    # process.detach()
+    def sendJson(self, pathJson, taskId):
+        cmd = f'docker exec -it baseline sh -c "python baseline.py send --path={pathJson} --taskid={taskId}" > ./log.txt'
+        cmds = shlex.split(cmd)
+        process = subprocess.run(cmds, start_new_session=True)
 
-    
-    # cmd = f'/app/send.sh {pathJson} {taskId}'
-    # cmds = shlex.split(cmd)
-    # # print(cmd, cmds)
-    # process = subprocess.run(cmds, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE, start_new_session=True)
-    # # process.detach()
-    
-    # with open('output.txt', 'w') as f: 
-    process= subprocess.Popen(["python", "-u", "/app/baseline.py", "send", f'--path={pathJson}', f'--taskid="{taskId}"'], start_new_session=True)
-    process.wait()
-    # logger.info(p)
-    # logger.info(subprocess.run(["/app/send.sh", pathJsonArg, taskIdArg], shell=True, check=True))
-    # logger.info(subprocess.run(["/app/send.sh", pathJsonArg, taskIdArg], check=True))
-    # logger.info(subprocess.run(["/app/send.sh", pathJsonArg, taskIdArg], shell=True, check=True, capture_output=True))
-    # logger.info(subprocess.run(["/app/send.sh", pathJsonArg, taskIdArg], check=True, capture_output=True))
-
-    # logger.info(os.system(f'python baseline.py --path=/app/test_result.json --taskid={data["taskId"]}'))
-    # subprocess.run(["python", "baseline.py", "send", pathJsonArg, taskIdArg])
-    # Логика нашей проги должна быть следующая:
-    #       Чтение файла "current_epicrisis_path"
-    #       генерация json <path_to_solution_json>
-    #       вызов скрипта `python baseline.py send --path=<path_to_solution_json> --taskid=<ID_задачи>`
-
-# if __name__ == '__main__':
-#     MedFlexSolve("/app/test_result.json", "10011")
+    def generateJsonSection(self, srcSection, outSection):
+        arrSymptoms = []
+        for symptom in outSection['symptoms']:
+            symptomJson = self._getSymptomJson(
+                srcSection['xPath'],
+                int(symptom[0]),
+                int(symptom[1]),
+                outSection['text'][int(symptom[0]):int(symptom[1])])
+            arrSymptoms.append(symptomJson)
+        return arrSymptoms
