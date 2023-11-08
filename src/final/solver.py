@@ -1,5 +1,4 @@
 from xmlHandler import xmlHandler
-from NN import NN
 from proccessTexts import proccess_texts
 from outputNNHandler import outNNHandler
 import json
@@ -7,7 +6,7 @@ import json
 class solver:
     def __init__(self):
         pass
-
+        
     def solve(self, pathXml, taskId):
         xml = xmlHandler(pathXml)
         sections = xml.getSections()
