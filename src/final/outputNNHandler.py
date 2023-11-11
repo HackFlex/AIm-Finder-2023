@@ -45,6 +45,11 @@ class outNNHandler:
     def __get_real_bounds_and_text(self, text_base: str, text_nn: str,
                                    start_nn: int, end_nn: int):
         # print(f'start={start_nn} end={end_nn} text="{text_nn}"', end=' | ')
+
+        # Плохо работает. Надо понять, как отсечь варианты, в которых нет цифр и букв
+        # if not text_nn.replace(' ', '').isalnum():
+        #     print("not is alnum")
+        #     return
         
         # Выберем точку старта в основном тексте для поиска симптома
         index = text_base.rfind(' ', 0, start_nn)
@@ -84,7 +89,6 @@ class outNNHandler:
         while start_base > 0 and text_base[start_base - 1].isalpha():
             start_base -= 1
 
-
         # Найдём конец симптома в основном тексте
         index = start_base
         for token in tokens:
@@ -93,6 +97,8 @@ class outNNHandler:
                 # print(f'Next token "{token}" not found')
                 return
         end_base = index + len(tokens[-1])
+        while end_base < len(text_base) and text_base[end_base].isalpha():
+            end_base += 1
 
         text_symptom = text_base[start_base:end_base]
         # print(f'start={start_base} end={end_base} text="{text_symptom}"')
