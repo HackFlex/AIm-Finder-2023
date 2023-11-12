@@ -17,6 +17,8 @@ class TextProcessor():
         self.max_len = max_len
         self.model = torch.load(path_to_model)
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer_name, add_prefix_space=True)
+        self.model.cpu()
+        self.model.eval()
         
     def get_symptoms(self, tokens, labels, verbose=False):
         text = self.tokenizer.decode(tokens, skip_special_tokens=True)
@@ -44,7 +46,7 @@ class TextProcessor():
     def process_labeled_texts(self, texts, preds, is_split=False):
         tokenized_inputs = self.tokenizer(
             texts, truncation=True, is_split_into_words=is_split, 
-            max_length=MAX_LEN,
+            max_length=self.max_len,
             padding=True, return_tensors='pt'
         )
         result = []
@@ -63,9 +65,9 @@ class TextProcessor():
         )
         tokens = tokenized_inputs['input_ids'][0]
         labels = []
-        for i in range(tokens.shape[0] // MAX_LEN + 1):
-            preds = model(input_ids=tokenized_inputs['input_ids'][:, i * MAX_LEN:(i + 1) * MAX_LEN],
-                          attention_mask=tokenized_inputs['attention_mask'][:, i * MAX_LEN:(i + 1) * MAX_LEN])
+        for i in range(tokens.shape[0] // self.max_len + 1):
+            preds = model(input_ids=tokenized_inputs['input_ids'][:, i * self.max_len:(i + 1) * self.max_len],
+                          attention_mask=tokenized_inputs['attention_mask'][:, i * self.max_len:(i + 1) * self.max_len])
             labels.extend(preds.logits.argmax(axis=2).tolist()[0])
         result = self.get_symptoms(tokens, labels)
         return result
