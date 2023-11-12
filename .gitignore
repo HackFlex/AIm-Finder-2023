@@ -1,6 +1,8 @@
 __pycache__
 other
 .cache
+.vscode
 my_awesome_wnut_model
 outputs
 models
+logs

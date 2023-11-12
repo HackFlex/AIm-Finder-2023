@@ -34,15 +34,16 @@ def get_symptoms(tokens, labels, verbose=False):
     return {'text': text, 'symptoms': symptoms}
 
 
-def proccess_texts(texts):
+def proccess_texts(texts, model=model, tokenizer=tokenizer, preds=None):
     tokenized_inputs = tokenizer(
         texts, truncation=True, is_split_into_words=True, 
         max_length=512, padding=True, return_tensors='pt'
     )
-    model.eval()
-    model.cpu()
-    preds = model(**tokenized_inputs).logits
-    preds = preds.argmax(axis=2)
+    if preds is None:
+        model.eval()
+        model.cpu()
+        preds = model(**tokenized_inputs).logits
+        preds = preds.argmax(axis=2)
 
     result = []
     for id in range(preds.shape[0]):
