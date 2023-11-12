@@ -3,13 +3,13 @@ import sys
 import time
 import json
 
-from datasets import Dataset, load_dataset
+from datasets import Dataset
 
 from stage2.labels_to_nn import LabelToNN
 
 
 def update_dataset(push_to_hub=True, return_dataset=False):
-    dir_name = "dataset/HF_dataset/"
+    dir_name = "/home/knaumenko/private_data/AIm-Finder-2023/dataset/HF_dataset/"
     files = os.listdir(dir_name)
     result = {"tokens": [], "ner_tags": []}
 
@@ -21,7 +21,7 @@ def update_dataset(push_to_hub=True, return_dataset=False):
         result["tokens"].extend(tmp["tokens"])
         result["ner_tags"].extend(tmp["ner_tags"])
 
-    with open('dataset/augmentation.json') as user_file:
+    with open('/home/knaumenko/private_data/AIm-Finder-2023/dataset/augmentation.json') as user_file:
         aug_data = json.load(user_file)[0]
 
     result["tokens"].extend(aug_data["tokens"])
