@@ -1,10 +1,11 @@
 from xmlHandler import xmlHandler
-from proccessTexts import proccess_texts
+from TextProcessor import TextProcessor, LoRALayer
 from outputNNHandler import outNNHandler
 import json
 
 class solver:
     def __init__(self):
+        self.processor = TextProcessor()
         pass
         
     def solve(self, pathXml, taskId):
@@ -12,7 +13,7 @@ class solver:
         sections = xml.getSections()
         tokenizeText = xml.getTokenizeText()
         ###NN
-        arrDict = proccess_texts(tokenizeText)
+        arrDict = self.processor.process_texts(tokenizeText)
         ###out NN to valid dict
         handler = outNNHandler()
         jsonDict = []

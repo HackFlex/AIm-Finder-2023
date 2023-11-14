@@ -79,7 +79,7 @@ class xmlHandler:
         retArray = []
         sections = self.getSections()
         for item in sections:
-            retArray.append(item['name'].split(' '))    
+            retArray.append(item['name'])    
         return (retArray)
         
     def getSections(self):

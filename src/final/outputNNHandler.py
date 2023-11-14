@@ -52,7 +52,8 @@ class outNNHandler:
             if result is None:
                 continue
             start_base, end_base, text_symptom = result
-
+            if len(text_symptom) == 1:
+                continue
             current_bound = (start_base, end_base)
             bound_status = self.__get_bound_status(bounds, current_bound)
             if bound_status[0] != BoundStatus.UNIQUE:

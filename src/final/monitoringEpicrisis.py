@@ -5,7 +5,7 @@ import configparser
 import shlex
 import subprocess
 
-from solver import solver
+from solver import solver, LoRALayer
 
 def startBaseline(baselineDir):
     cmd = f'docker compose -f {baselineDir}/docker-compose.yml up -d --force-recreate'
@@ -17,7 +17,7 @@ def startBaseline(baselineDir):
     subprocess.run(cmds, start_new_session=True)
     time.sleep(1)
     #test
-    cmd = 'docker exec -it baseline sh -c "python baseline.py start --contest=finder --stage=final --type=estimated-training --count=90 --timeout=20"'
+    cmd = 'docker exec -it baseline sh -c "python baseline.py start --contest=finder --stage=final --type=estimated-training --count=90 --timeout=15"'
     ## final
     # cmd = 'docker exec -it baseline sh -c "python baseline.py start --contest=finder --stage=final --type=challenge"' 
     cmds = shlex.split(cmd)
@@ -53,7 +53,7 @@ if __name__ == '__main__':
                 if (tmpPathXml != pathXml):
                     sessionStarted = True
             elif (XmlSuccesProcesed(processedXml, tmpPathXml) == False):
-                time.sleep(1)
+                time.sleep(2)
                 pathXml = tmpPathXml
                 nameXml = pathXml[4:]
                 taskId = nameXml.split("/")[-1].split("_")[-1].split(".")[0]
@@ -65,6 +65,6 @@ if __name__ == '__main__':
                     print(f'Error in solver. xmlPath={baselineDir + nameXml}, taskId={taskId}')
                     print(str(e))
                     print()
-            time.sleep(1)
+            time.sleep(2)
     except KeyboardInterrupt:
         pass
