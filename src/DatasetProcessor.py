@@ -4,7 +4,7 @@ import time
 import json
 import random
 
-from datasets import Dataset, concatenate_datasets
+from datasets import Dataset
 
 from stage2.labels_to_nn import LabelToNN
 
@@ -38,14 +38,16 @@ class DatasetProcessor():
         aug_num = len(aug_data["tokens"])
         print(aug_num)
         
-        inds = random.Random(RANDOM_SEED).sample(range(0, aug_num), 1000)
-        train_data["tokens"].extend(
-            [token for i, token in enumerate(aug_data["tokens"]) if i in inds]
-            )
-        train_data["ner_tags"].extend(
-            [tag for i, tag in enumerate(aug_data["ner_tags"]) if i in inds]
-            )
+        # inds = random.Random(RANDOM_SEED).sample(range(0, aug_num), 1000)
+        # train_data["tokens"].extend(
+        #     [token for i, token in enumerate(aug_data["tokens"]) if i in inds]
+        #     )
+        # train_data["ner_tags"].extend(
+        #     [tag for i, tag in enumerate(aug_data["ner_tags"]) if i in inds]
+        #     )
 
+        train_data["tokens"].extend(aug_data["tokens"])
+        train_data["ner_tags"].extend(aug_data["ner_tags"])
         train_dataset = Dataset.from_dict(train_data)
         print('Total train raws:', len(train_dataset))
 
