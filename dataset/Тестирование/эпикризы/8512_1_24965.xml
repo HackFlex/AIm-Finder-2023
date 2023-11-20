@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="DischSum.xsl"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+ <!-- ЗАГОЛОВОК ДОКУМЕНТА "Шаблон документа - xmlAIDoc"-->
+ <!-- Построен на основании Приказа МЗ РФ от 5 августа 2022 г. N530н, СЭД.Эпикриз_в_стационаре_выписной, СЭД.Эпикриз_по_законченному_случаю_амбулаторный-->
+ <!-- R [1..] Требуемый элемент. Элемент обязан иметь непустое наполнение, nullFlavor не разрешён -->
+ <!-- [1..] Обязательный элемент. Элемент обязан присутствовать, но может иметь пустое наполнение с указанием причины отсутствия информации через nullFlavor -->
+ <!-- [0..] Не обязательный элемент. Элемент может отсутствовать -->
+ <!-- R [1..1] Область применения документа (Страна) -->
+ <realmCode code="RU"/>
+ <!-- R [1..1] Указатель на использование CDA R2 -->
+ <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+ <!-- R [1..1] Идентификатор Шаблона документа "xmlAIDoc" -->
+ <!-- R [1..1] Уникальный идентификатор документа (не присвоен)-->
+ <!-- Сеченовский Университет 
+  OID: 1.2.643.5.1.13.13.12.2.77.8510
+  ИЦМ: 100.100.100.1
+  UID: 10001-уникальный идентификатор документа в ИЦМ -->
+ <id extension="10001" root="1.2.643.5.1.13.13.12.2.77.8510.100.100.100.1"/>
+ <!-- R [1..1] Тип документа -->
+ <!-- Специализированного документа в реестре видов медицинской документации нет -->
+ <!-- Документ построен на основании СМЭД "Эпикриз в стационаре выписной", "Эпикриз по законченному случаю" и данных ИЭМК определенных Приказа МЗ РФ от 5 августа 2022 г. N530Н-->
+ <!--  Тип документа -->
+ <code code="10000" codeSystem="1.2.643.5.1.13.13.11.1115" codeSystemName="Система электронных медицинских документов" codeSystemVersion="2.2" displayName="xml_AIDoctor"/>
+ <!-- Код не присвоен, code="10000" указан произвольно -->
+ <!-- R [1..1] Заголовок документа -->
+ <title>
+  выписной эпикриз
+ </title>
+ <!-- R [1..1] Дата создания документа -->
+ <effectiveTime value="20230102"/>
+ <!-- R [1..1] Уровень конфиденциальности медицинского документа -->
+ <confidentialityCode code="N" codeSystem="1.2.643.5.1.13.13.11.1116" codeSystemName="Уровень конфиденциальности медицинского документа" codeSystemVersion="1.1" displayName="обычный"/>
+ <!-- R [1..1] Язык документа -->
+ <languageCode code="ru-RU"/>
+ <!-- R [1..1] Кодовый номер версии документа -->
+ <!-- 1 - полный -->
+ <!-- 2 - без секции диагнозов секция исследования и консультации полностью  -->
+ <!-- 3 - без секции диагнозов, секция исследования и консультации частична  -->
+ <versionNumber value="2"/>
+ <!-- R [1..1] ДАННЫЕ: ПАЦИЕНТ -->
+ <recordTarget>
+  <!-- R [1..1] ПАЦИЕНТ -->
+  <patientRole>
+   <!-- [1..1] Документ, удостоверяющий личность пациента, серия, номер, кем выдан. -->
+   <!-- <id root="1.2.643.5.1.13.13.11.1011.1" extension="1111 000001" assigningAuthorityName='ОВД "Отдельное" ОУФМС России по гор. Москве. Код подразделения: 777-777. Дата выдачи: 11.02.2005'/> -->
+   <id assigningAuthorityName="Данные скрыты" extension="Данные скрыты" root="1.2.643.5.1.13.13.11.1011.1"/>
+   <patient>
+    <!-- R [1..1] ФИО пациента -->
+    <name>
+     <!-- R [1..1] Фамилия -->
+     <family>
+      Фамилия
+     </family>
+     <!-- R [1..1] Имя -->
+     <given>
+      Имя
+     </given>
+     <!-- [1..1] Отчество -->
+     <given>
+      Отчество  -  скрыты
+     </given>
+    </name>
+    <!-- R [1..1] Пол пациента -->
+    <administrativeGenderCode code="1" codeSystem="1.2.643.5.1.13.13.11.1040" codeSystemName="Пол пациента" codeSystemVersion="2.1" displayName="Мужской"/>
+    <!-- R [1..1] Дата рождения -->
+    <birthTime value="19531226"/>
+   </patient>
+   <!-- R [1..1] Организация, сформировавшая электронный документ -->
+   <providerOrganization>
+    <id root="1.2.643.5.1.13.13.12.2.77.8510"/>
+    <name>
+     ФГАОУ ВО Первый МГМУ им. И.М.Сеченова Минздрава России (Сеченовский Университет)
+    </name>
+    <telecom value="email:sechenov@mail.ru"/>
+    <telecom value="http://sechenov.ru"/>
+    <addr>
+     <streetAddressLine>
+      г. Москва, ул Трубецкая, д. 8, к. 2
+     </streetAddressLine>
+     <state>
+      г. Москва
+     </state>
+    </addr>
+   </providerOrganization>
+  </patientRole>
+ </recordTarget>
+ <!-- R [1..1] ДАННЫЕ: АВТОР ДОКУМЕНТА -->
+ <!-- R [1..1] ДАННЫЕ: ОБ ОРГАНИЗАЦИИ-СОЗДАТЕЛЕ ДОКУМЕНТА -->
+ <author>
+  <time/>
+  <assignedAuthor>
+   <id/>
+  </assignedAuthor>
+ </author>
+ <custodian>
+  <!-- R [1..1] Организация-владелец документа (роль) -->
+  <assignedCustodian>
+   <!-- R [1..1] Организация-владелец документа (организация) -->
+   <representedCustodianOrganization>
+    <id root="1.2.643.5.1.13.13.12.2.77.8510"/>
+    <name>
+     ФГАОУ ВО Первый МГМУ им. И.М.Сеченова Минздрава России (Сеченовский Университет)
+    </name>
+    <addr>
+     <streetAddressLine>
+      г. Москва, ул Трубецкая, д. 8, к. 2
+     </streetAddressLine>
+     <state>
+      г. Москва
+     </state>
+    </addr>
+   </representedCustodianOrganization>
+  </assignedCustodian>
+ </custodian>
+ <!-- R [1..1] ДАННЫЕ: О ПОЛУЧАТЕЛЕ ДОКУМЕНТА - ИЭМК \ МЗ РФ-->
+ <!-- R [1..1] ТЕЛО ДОКУМЕНТА -->
+ <component>
+  <!-- R [1..1] СТРУКТУРИРОВАННОЕ ТЕЛО ДОКУМЕНТА -->
+  <structuredBody>
+   <!-- R [1..1] СЕКЦИЯ_1: МЕДИЦИНСКИЕ ДАННЫЕ ПАЦИЕНТА  -->
+   <!-- R [1..1] СЕКЦИЯ_2 (ИЭМК): ЖАЛОБЫ ПЕРВИЧНЫЙ ОСМОТР  -->
+   <component>
+    <section>
+     <!-- R [1..1] ЖАЛОБЫ ПЕРВИЧНОГО ОСМОТРА -->
+     <code code="COMPLNTS" codeSystem="1.2.643.5.1.13.13.99.2.197" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="3.7" displayName="Жалобы"/>
+     <!-- R [1..1] ЖАЛОБЫ ПРИ ПОСТУПЛЕНИИ -->
+     <title>
+      ЖАЛОБЫ ПРИ ПОСТУПЛЕНИИ
+     </title>
+     <!-- R [1..1] наполнение секции -->
+     <text>
+      СостояниеЖ Средней тяжести.
+      <br/>
+      <br/>
+      Жалобы: на общую слабость, головные боли, повышение гликемии натощак до 13 ммоль/л
+     </text>
+     <!-- R [1..1] кодирование состояния при поступлении -->
+     <entry>
+      <observation classCode="OBS" moodCode="EVN">
+       <code code="804" codeSystem="1.2.643.5.1.13.13.99.2.166" codeSystemName="Кодируемые поля CDA документов" codeSystemVersion="1.49" displayName="Состояние пациента"/>
+       <value code="2" codeSystem="1.2.643.5.1.13.13.11.1006" codeSystemName="Степень тяжести состояния пациента" codeSystemVersion="2.1" displayName="Средней тяжести" xsi:type="CD"/>
+      </observation>
+     </entry>
+     <entry>
+      <observation classCode="OBS" moodCode="EVN">
+       <code code="835" codeSystem="1.2.643.5.1.13.13.99.2.166" codeSystemName="Кодируемые поля CDA документов" codeSystemVersion="1.49" displayName="Жалобы пациента"/>
+       <value xsi:type="ST">
+        на общую слабость, головные боли, повышение гликемии натощак до 13 ммоль/л
+       </value>
+      </observation>
+     </entry>
+    </section>
+   </component>
+   <!-- [0..1] СЕКЦИЯ_3: СОЦИАЛЬНЫЙ АНАМНЕЗ -->
+   <component>
+    <section>
+     <!-- R [1..1] код секции -->
+     <code code="SOCANAM" codeSystem="1.2.643.5.1.13.13.11.1379" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="1.2" displayName="Социальный анамнез"/>
+     <!-- R [1..1] заголовок секции -->
+     <title>
+      СОЦИАЛЬНЫЙ АНАМНЕЗ
+     </title>
+     <!-- R [1..1] наполнение секции -->
+     <text>
+      <list listType="unordered">
+       <caption>
+        Занятость
+       </caption>
+       <item>
+        <content ID="socanam1">
+         Пенсионер
+        </content>
+       </item>
+      </list>
+      <list listType="unordered">
+       <caption>
+        Место жительства
+       </caption>
+       <item>
+        <content ID="socanam2">
+         Город
+        </content>
+       </item>
+      </list>
+     </text>
+     <!-- [0..*] Кодирование льготной категории -->
+     <!-- [0..1] Кодирование инвалидности -->
+     <!-- [0..*] Кодирование потенциально-опасных для здоровья социальных факторов -->
+     <!-- [0..*] Кодирование профессиональных вредностей -->
+     <!-- [0..1] Кодирование местности регистрации -->
+     <!-- [0..1] Кодирование занятости -->
+     <!-- [0..*] Кодирование вредных привычек и зависимостей -->
+     <entry>
+      <observation classCode="OBS" moodCode="EVN">
+       <code code="7" codeSystem="1.2.643.5.1.13.13.11.1038" codeSystemName="Занятость (социальные группы) населения" codeSystemVersion="13.2" displayName="Пенсионер">
+        <originalText>
+         <reference value="socanam1"/>
+        </originalText>
+       </code>
+      </observation>
+     </entry>
+     <entry>
+      <observation classCode="OBS" moodCode="EVN">
+       <code code="1" codeSystem="1.2.643.5.1.13.13.11.1042" codeSystemName="Признак жителя города или села" codeSystemVersion="3.2" displayName="Город">
+        <originalText>
+         <reference value="socanam2"/>
+        </originalText>
+       </code>
+      </observation>
+     </entry>
+    </section>
+   </component>
+   <!-- R [1..1] СЕКЦИЯ_4: АНАМНЕЗ ЗАБОЛЕВАНИЯ -->
+   <component>
+    <section>
+     <!-- R [1..1] Код секции -->
+     <code code="ANAM" codeSystem="1.2.643.5.1.13.13.99.2.197" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="3.7" displayName="Анамнез заболевания"/>
+     <!-- R [1..1] Заголовок секции -->
+     <title>
+      Анамнез заболевания
+     </title>
+     <!-- R [1..1] Наполнение секции -->
+     <text>
+      В течение жизни избыточная масса тела, в настоящее время вес 96 кг (ИМТ= 32,8 кг/м2).
+В 2020 г. (67 лет) диагностирован сахарный диабет 2 типа. Назначалась различная таблетированная сахароснижающая терапия. В ноябре 2020 года проходил стационарное лечение ЭТО №2 УКБ №2 Первого МГМУ им. И.М.Сеченова, где была проведена коррекция сахароснижающей терапии: Джардинс 25 мг утром, Янувия 100 мг утром, Метформин 2000 мг/сут. С начала декабря 2021 г. на фоне воспаления крайней плоти – гликемия до 13 ммоль/л натощак. Препарат из группы иНГЛТ-2 отменен, оставлен Метформин 2000 мг на ночь. Гликемия на этом фоне 9-13 ммоль/л натощак.
+     </text>
+     <!-- R [1..1] Анамнез заболевания -->
+     <entry>
+      <observation classCode="OBS" moodCode="EVN">
+       <code code="7006" codeSystem="1.2.643.5.1.13.13.99.2.166" codeSystemName="Кодируемые поля CDA документов" codeSystemVersion="1.49" displayName="Текстовое описание"/>
+       <value xsi:type="ST">
+        В течение жизни избыточная масса тела, в настоящее время вес 96 кг (ИМТ= 32,8 кг/м2).
+В 2020 г. (67 лет) диагностирован сахарный диабет 2 типа. Назначалась различная таблетированная сахароснижающая терапия. В ноябре 2020 года проходил стационарное лечение ЭТО №2 УКБ №2 Первого МГМУ им. И.М.Сеченова, где была проведена коррекция сахароснижающей терапии: Джардинс 25 мг утром, Янувия 100 мг утром, Метформин 2000 мг/сут. С начала декабря 2021 г. на фоне воспаления крайней плоти – гликемия до 13 ммоль/л натощак. Препарат из группы иНГЛТ-2 отменен, оставлен Метформин 2000 мг на ночь. Гликемия на этом фоне 9-13 ммоль/л натощак.
+       </value>
+      </observation>
+     </entry>
+    </section>
+   </component>
+   <!-- R [1..1] СЕКЦИЯ_4: ФИЗИКАЛЬНОЕ ОБСЛЕДОВАНИЕ -->
+   <component>
+    <section>
+     <!-- R [1..1] Код секции -->
+     <code code="PHYS" codeSystem="1.2.643.5.1.13.13.99.2.197" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="3.7" displayName="Физикальное обследование"/>
+     <!-- R [1..1] Заголовок секции -->
+     <title>
+      ФИЗИКАЛЬНОЕ ОБСЛЕДОВАНИЕ
+     </title>
+     <!-- R [1..1] Наполнение секции -->
+     <text>
+      <paragraph>
+       1.
+       Кожные покровы физиологической окраски, чистые, умеренно влажные
+      </paragraph>
+      <paragraph>
+       2.
+       нет
+      </paragraph>
+      <paragraph>
+       3.
+       розовые
+      </paragraph>
+      <paragraph>
+       4.
+       Дыхание везикулярное, хрипов нет
+      </paragraph>
+      <paragraph>
+       5.
+       Тоны сердца ясные, ритмичные, шумов нет.
+      </paragraph>
+      <paragraph>
+       6.
+       При поверхностной пальпации живот мягкий, безболезненный во всех отделах. Нижний край печени по краю реберной дуги
+      </paragraph>
+     </text>
+     <!-- R [1..1] Кодирование  -->
+     <entry>
+      <observation classCode="OBS" moodCode="EVN">
+       <code code="7006" codeSystem="1.2.643.5.1.13.13.99.2.166" codeSystemName="Кодируемые поля CDA документов" codeSystemVersion="1.49" displayName="Текстовое описание"/>
+       <value xsi:type="ST">
+        Оценка состояния кожных покровов : Кожные покровы физиологической окраски, чистые, умеренно влажные
+
+Отеки : нет
+
+Оценка состояния видимых слизистых оболочек : розовые
+
+Результаты аускультации легких : Дыхание везикулярное, хрипов нет
+
+Результаты перкуссии и аускультация сердца : Тоны сердца ясные, ритмичные, шумов нет.
+
+Результаты пальпации органов брюшной полости с определением размеров печени и селезенки (перкуторно и пальпаторно в сантиметрах из-под края реберной дуги) : При поверхностной пальпации живот мягкий, безболезненный во всех отделах. Нижний край печени по краю реберной дуги
+       </value>
+      </observation>
+     </entry>
+    </section>
+   </component>
+   <!-- R [1..1] СЕКЦИЯ_5: СОСТОЯНИЕ ПРИ ПОСТУПЛЕНИИ  -->
+   <component>
+    <section>
+     <!-- R [1..1] код секции -->
+     <code code="STATEADM" codeSystem="1.2.643.5.1.13.13.11.1379" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="1.2" displayName="Состояние при поступлении"/>
+     <!-- R [1..1] заголовок секции -->
+     <title>
+      СОСТОЯНИЕ ПРИ ПОСТУПЛЕНИИ
+     </title>
+     <!-- R [1..1] наполнение секции -->
+     <text>
+      Средней тяжести.
+     </text>
+     <!-- R [1..1] кодирование состояния при поступлении -->
+     <entry>
+      <observation classCode="OBS" moodCode="EVN">
+       <code code="804" codeSystem="1.2.643.5.1.13.13.11.1380" codeSystemName="Кодируемые поля CDA документов" codeSystemVersion="1.1" displayName="Состояние пациента"/>
+       <value code="2" codeSystem="1.2.643.5.1.13.13.11.1006" codeSystemName="Степень тяжести состояния пациента" codeSystemVersion="2.1" displayName="Средней тяжести" xsi:type="CD"/>
+      </observation>
+     </entry>
+    </section>
+   </component>
+   <!-- [0..1] СЕКЦИЯ_6: ОБЪЕКТИВИЗИРОВАННАЯ ОЦЕНКА СОСТОЯНИЯ БОЛЬНОГО  -->
+   <component>
+    <section>
+     <!-- R [1..1] код секции -->
+     <code code="SCORES" codeSystem="1.2.643.5.1.13.13.11.1379" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="1.2" displayName="Объективизированная оценка состояния больного"/>
+     <!-- R [1..1] заголовок секции -->
+     <title>
+      ОБЪЕКТИВИЗИРОВАННАЯ ОЦЕНКА СОСТОЯНИЯ БОЛЬНОГО
+     </title>
+     <!-- [1..1] наполнение секции -->
+     <text>
+      Отсутствует
+     </text>
+    </section>
+   </component>
+   <!-- [0..1] СЕКЦИЯ_7: ПАТОЛОГИЧЕСКИЕ РЕАКЦИИ  -->
+   <component>
+    <section>
+     <!-- R [1..1] код секции -->
+     <code code="ALL" codeSystem="1.2.643.5.1.13.13.11.1379" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="1.2" displayName="Аллергии и непереносимость"/>
+     <!-- R [1..1] заголовок секции -->
+     <title>
+      ПАТОЛОГИЧЕСКИЕ РЕАКЦИИ
+     </title>
+     <!-- R [1..1] наполнение секции -->
+     <text>
+      <table width="100%">
+       <col width="10%"/>
+       <col width="10%"/>
+       <col width="20%"/>
+       <col width="20%"/>
+       <col width="30%"/>
+       <tbody>
+        <tr>
+         <th>
+          Дата выявления
+         </th>
+         <th>
+          Тип агента
+         </th>
+         <th>
+          Действующее вещество/Агент
+         </th>
+         <th>
+          Тип реакции
+         </th>
+         <th>
+          Комментарии
+         </th>
+        </tr>
+       </tbody>
+      </table>
+     </text>
+    </section>
+   </component>
+   <!-- [0..1] СЕКЦИЯ_8: ВИТАЛЬНЫЕ ПАРАМЕТРЫ -->
+   <component>
+    <section>
+     <!-- R [1..1] Код секции -->
+     <code code="VITALPARAM" codeSystem="1.2.643.5.1.13.13.99.2.197" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="1.13" displayName="Витальные параметры"/>
+     <!-- R [1..1] Заголовок секции -->
+     <title>
+      ВИТАЛЬНЫЕ ПАРАМЕТРЫ
+     </title>
+     <!-- R [1..1] Наполнение секции -->
+     <text>
+      <table width="100%">
+       <tbody>
+        <tr>
+         <th>
+          Дата и время фиксирования витального параметра
+         </th>
+         <th>
+          Название витального параметра
+         </th>
+         <th>
+          Значение витального параметра
+         </th>
+         <th>
+          Единицы измерения
+         </th>
+         <th>
+          Референтный интервал
+         </th>
+        </tr>
+        <tr>
+         <td>
+          <content>
+           30.11.2021:21:00
+          </content>
+         </td>
+         <td>
+          <content>
+           Артериальное давление диастолическое
+          </content>
+         </td>
+         <td>
+          <content>
+           80.0
+          </content>
+         </td>
+         <td>
+          <content>
+           мм.рт.ст.
+          </content>
+         </td>
+         <td>
+          <content>
+          </content>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <content>
+           30.11.2021:21:00
+          </content>
+         </td>
+         <td>
+          <content>
+           Артериальное давление систолическое
+          </content>
+         </td>
+         <td>
+          <content>
+           130.0
+          </content>
+         </td>
+         <td>
+          <content>
+           мм.рт.ст.
+          </content>
+         </td>
+         <td>
+          <content>
+          </content>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <content>
+           30.11.2021:21:00
+          </content>
+         </td>
+         <td>
+          <content>
+           Частота сердечных сокращений
+          </content>
+         </td>
+         <td>
+          <content>
+           86.0
+          </content>
+         </td>
+         <td>
+          <content>
+           1/мин
+          </content>
+         </td>
+         <td>
+          <content>
+          </content>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <content>
+           30.11.2021:21:00
+          </content>
+         </td>
+         <td>
+          <content>
+           Пульс
+          </content>
+         </td>
+         <td>
+          <content>
+           80.0
+          </content>
+         </td>
+         <td>
+          <content>
+           1/мин
+          </content>
+         </td>
+         <td>
+          <content>
+          </content>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <content>
+           30.11.2021:21:00
+          </content>
+         </td>
+         <td>
+          <content>
+           Частота дыхания
+          </content>
+         </td>
+         <td>
+          <content>
+           16.0
+          </content>
+         </td>
+         <td>
+          <content>
+           1/мин
+          </content>
+         </td>
+         <td>
+          <content>
+          </content>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <content>
+           30.11.2021:21:00
+          </content>
+         </td>
+         <td>
+          <content>
+           Индекс массы тела
+          </content>
+         </td>
+         <td>
+          <content>
+           32.8
+          </content>
+         </td>
+         <td>
+          <content>
+           кг/м^2
+          </content>
+         </td>
+         <td>
+          <content>
+          </content>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <content>
+           30.11.2021:21:00
+          </content>
+         </td>
+         <td>
+          <content>
+           Рост
+          </content>
+         </td>
+         <td>
+          <content>
+           171.0
+          </content>
+         </td>
+         <td>
+          <content>
+           см
+          </content>
+         </td>
+         <td>
+          <content>
+          </content>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <content>
+           30.11.2021:21:00
+          </content>
+         </td>
+         <td>
+          <content>
+           Масса тела
+          </content>
+         </td>
+         <td>
+          <content>
+           96.0
+          </content>
+         </td>
+         <td>
+          <content>
+           кг
+          </content>
+         </td>
+         <td>
+          <content>
+          </content>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </text>
+     <entry>
+      <organizer classCode="CLUSTER" moodCode="EVN">
+       <statusCode code="completed"/>
+       <effectiveTime value="202111302100"/>
+       <component typeCode="COMP">
+        <observation classCode="OBS" moodCode="EVN">
+         <code code="2" codeSystem="1.2.643.5.1.13.13.99.2.262" codeSystemName="Справочник витальных параметров" codeSystemVersion="3.1" displayName="Артериальное давление диастолическое"/>
+         <value unit="мм.рт.ст." value="80.0" xsi:type="PQ">
+          <translation code="50" codeSystem="1.2.643.5.1.13.13.11.1358" codeSystemName="Единицы измерения" codeSystemVersion="2.8" displayName="мм.рт.ст." value="80.0"/>
+         </value>
+        </observation>
+       </component>
+      </organizer>
+     </entry>
+     <entry>
+      <organizer classCode="CLUSTER" moodCode="EVN">
+       <statusCode code="completed"/>
+       <effectiveTime value="202111302100"/>
+       <component typeCode="COMP">
+        <observation classCode="OBS" moodCode="EVN">
+         <code code="3" codeSystem="1.2.643.5.1.13.13.99.2.262" codeSystemName="Справочник витальных параметров" codeSystemVersion="3.1" displayName="Артериальное давление систолическое"/>
+         <value unit="мм.рт.ст." value="130.0" xsi:type="PQ">
+          <translation code="50" codeSystem="1.2.643.5.1.13.13.11.1358" codeSystemName="Единицы измерения" codeSystemVersion="2.8" displayName="мм.рт.ст." value="130.0"/>
+         </value>
+        </observation>
+       </component>
+      </organizer>
+     </entry>
+     <entry>
+      <organizer classCode="CLUSTER" moodCode="EVN">
+       <statusCode code="completed"/>
+       <effectiveTime value="202111302100"/>
+       <component typeCode="COMP">
+        <observation classCode="OBS" moodCode="EVN">
+         <code code="4" codeSystem="1.2.643.5.1.13.13.99.2.262" codeSystemName="Справочник витальных параметров" codeSystemVersion="3.1" displayName="Частота сердечных сокращений"/>
+         <value unit="1/мин" value="86.0" xsi:type="PQ">
+          <translation code="337" codeSystem="1.2.643.5.1.13.13.11.1358" codeSystemName="Единицы измерения" codeSystemVersion="2.8" displayName="1/мин" value="86.0"/>
+         </value>
+        </observation>
+       </component>
+      </organizer>
+     </entry>
+     <entry>
+      <organizer classCode="CLUSTER" moodCode="EVN">
+       <statusCode code="completed"/>
+       <effectiveTime value="202111302100"/>
+       <component typeCode="COMP">
+        <observation classCode="OBS" moodCode="EVN">
+         <code code="5" codeSystem="1.2.643.5.1.13.13.99.2.262" codeSystemName="Справочник витальных параметров" codeSystemVersion="3.1" displayName="Пульс"/>
+         <value unit="1/мин" value="80.0" xsi:type="PQ">
+          <translation code="337" codeSystem="1.2.643.5.1.13.13.11.1358" codeSystemName="Единицы измерения" codeSystemVersion="2.8" displayName="1/мин" value="80.0"/>
+         </value>
+        </observation>
+       </component>
+      </organizer>
+     </entry>
+     <entry>
+      <organizer classCode="CLUSTER" moodCode="EVN">
+       <statusCode code="completed"/>
+       <effectiveTime value="202111302100"/>
+       <component typeCode="COMP">
+        <observation classCode="OBS" moodCode="EVN">
+         <code code="7" codeSystem="1.2.643.5.1.13.13.99.2.262" codeSystemName="Справочник витальных параметров" codeSystemVersion="3.1" displayName="Частота дыхания"/>
+         <value unit="1/мин" value="16.0" xsi:type="PQ">
+          <translation code="337" codeSystem="1.2.643.5.1.13.13.11.1358" codeSystemName="Единицы измерения" codeSystemVersion="2.8" displayName="1/мин" value="16.0"/>
+         </value>
+        </observation>
+       </component>
+      </organizer>
+     </entry>
+     <entry>
+      <organizer classCode="CLUSTER" moodCode="EVN">
+       <statusCode code="completed"/>
+       <effectiveTime value="202111302100"/>
+       <component typeCode="COMP">
+        <observation classCode="OBS" moodCode="EVN">
+         <code code="10" codeSystem="1.2.643.5.1.13.13.99.2.262" codeSystemName="Справочник витальных параметров" codeSystemVersion="3.1" displayName="Индекс массы тела"/>
+         <value unit="кг/м^2" value="32.8" xsi:type="PQ">
+          <translation code="532" codeSystem="1.2.643.5.1.13.13.11.1358" codeSystemName="Единицы измерения" codeSystemVersion="2.8" displayName="кг/м^2" value="32.8"/>
+         </value>
+        </observation>
+       </component>
+      </organizer>
+     </entry>
+     <entry>
+      <organizer classCode="CLUSTER" moodCode="EVN">
+       <statusCode code="completed"/>
+       <effectiveTime value="202111302100"/>
+       <component typeCode="COMP">
+        <observation classCode="OBS" moodCode="EVN">
+         <code code="57" codeSystem="1.2.643.5.1.13.13.99.2.262" codeSystemName="Справочник витальных параметров" codeSystemVersion="3.1" displayName="Рост"/>
+         <value unit="см" value="171.0" xsi:type="PQ">
+          <translation code="3" codeSystem="1.2.643.5.1.13.13.11.1358" codeSystemName="Единицы измерения" codeSystemVersion="2.8" displayName="см" value="171.0"/>
+         </value>
+        </observation>
+       </component>
+      </organizer>
+     </entry>
+     <entry>
+      <organizer classCode="CLUSTER" moodCode="EVN">
+       <statusCode code="completed"/>
+       <effectiveTime value="202111302100"/>
+       <component typeCode="COMP">
+        <observation classCode="OBS" moodCode="EVN">
+         <code code="50" codeSystem="1.2.643.5.1.13.13.99.2.262" codeSystemName="Справочник витальных параметров" codeSystemVersion="3.1" displayName="Масса тела"/>
+         <value unit="кг" value="96.0" xsi:type="PQ">
+          <translation code="9" codeSystem="1.2.643.5.1.13.13.11.1358" codeSystemName="Единицы измерения" codeSystemVersion="2.8" displayName="кг" value="96.0"/>
+         </value>
+        </observation>
+       </component>
+      </organizer>
+     </entry>
+    </section>
+   </component>
+   <!-- R [1..1] СЕКЦИЯ_9: ДИАГНОСТИЧЕСКИЕ ИССЛЕДОВАНИЯ И КОНСУЛЬТАЦИИ  -->
+   <component>
+    <section>
+     <!-- R [1..1] код секции -->
+     <code code="PROC" codeSystem="1.2.643.5.1.13.13.11.1379" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="1.2" displayName="Исследования и процедуры"/>
+     <!-- R [1..1] заголовок секции -->
+     <title>
+      ДИАГНОСТИЧЕСКИЕ ИССЛЕДОВАНИЯ И КОНСУЛЬТАЦИИ
+     </title>
+     <!-- [1..1] СЕКЦИЯ_9/1: РЕЗУЛЬТАТЫ ИНСТРУМЕНТАЛЬНЫХ ИССЛЕДОВАНИЙ -->
+     <component>
+      <section>
+       <!-- R [1..1] код секции -->
+       <code code="RESINSTR" codeSystem="1.2.643.5.1.13.13.11.1379" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="1.2" displayName="Результаты инструментальных исследований"/>
+       <!-- R [1..1] заголовок секции -->
+       <title>
+        Результаты инструментальных исследований
+       </title>
+       <!-- [1..1] наполнение секции -->
+       <text>
+        <table width="100%">
+         <tbody>
+          <tr>
+           <th>
+            Дата
+           </th>
+           <th>
+            Исследование
+           </th>
+           <th>
+            Результаты
+           </th>
+           <th>
+            Приоритет
+           </th>
+          </tr>
+          <tr>
+           <td>
+            30.11.2021:21:00
+           </td>
+           <td>
+            УЗИ
+           </td>
+           <td>
+            A. dorsalispedis: кровоток магистральный, a. tibialisposterior: кровоток магистральный, a. poplitea: кровоток магистральный
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </text>
+       <entry>
+        <observation classCode="OBS" moodCode="EVN">
+         <code code="7005382" codeSystem="1.2.643.5.1.13.13.11.1471" codeSystemName="Федеральный справочник инструментальных диагностических исследований" codeSystemVersion="2.33" displayName="Ультразвуковая допплерография артерий нижних конечностей"/>
+         <statusCode code="completed"/>
+         <effectiveTime value="202111302100"/>
+         <value xsi:type="ST">
+          A. dorsalispedis: кровоток магистральный, a. tibialisposterior: кровоток магистральный, a. poplitea: кровоток магистральный
+         </value>
+         <entryRelationship inversionInd="false" typeCode="REFR">
+          <act classCode="ACT" moodCode="EVN">
+           <code code="A04.12.001.001" codeSystem="1.2.643.5.1.13.13.11.1070" codeSystemName="Номенклатура медицинских услуг" codeSystemVersion="2.10" displayName="Ультразвуковая допплерография артерий нижних конечностей"/>
+           <effectiveTime value="202111302100"/>
+          </act>
+         </entryRelationship>
+        </observation>
+       </entry>
+      </section>
+     </component>
+     <!-- [1..1] СЕКЦИЯ_9/2: РЕЗУЛЬТАТЫ ЛАБОРАТОРНЫХ ИССЛЕДОВАНИЙ -->
+     <component>
+      <section>
+       <!-- R [1..1] код секции -->
+       <code code="RESLAB" codeSystem="1.2.643.5.1.13.13.11.1379" codeSystemName="Секции электронных медицинских документов" codeSystemVersion="1.2" displayName="Результаты лабораторных исследований"/>
+       <!-- R [1..1] заголовок секции -->
+       <title>
+        Результаты лабораторных исследований
+       </title>
+       <!-- [1..1] наполнение секции -->
+       <text>
+        <table width="100%">
+         <col width="28%"/>
+         <col width="20%"/>
+         <col width="18%"/>
+         <col width="21%"/>
+         <col width="13%"/>
+         <thead>
+          <tr>
+           <th>
+            Показатель
+           </th>
+           <th>
+            Значение
+           </th>
+           <th>
+            Единицы измерения
+           </th>
+           <th>
+            Референтный дианазон
+           </th>
+           <th>
+            Дата
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td colspan="5">
+            <content styleCode="Bold">
+             Исследование уровня гликированного гемоглобина в крови
+            </content>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Гемоглобин гликированный, фракция общего гемоглобина в крови методом высокоэффективной жидкостной хроматографии
+           </td>
+           <td>
+            8.6
+           </td>
+           <td>
+            %
+           </td>
+           <td>
+           </td>
+           <td>
+            31.01.2021:21:00
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table width="100%">
+         <col width="28%"/>
+         <col width="20%"/>
+         <col width="18%"/>
+         <col width="21%"/>
+         <col width="13%"/>
+         <thead>
+          <tr>
+           <th>
+            Показатель
+           </th>
+           <th>
+            Значение
+           </th>
+           <th>
+            Единицы измерения
+           </th>
+           <th>
+            Референтный дианазон
+           </th>
+           <th>
+            Дата
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td colspan="5">
+            <content styleCode="Bold">
+             Исследование уровня C-пептида в крови
+            </content>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            С-пептид, массовая концентрация в сыворотке или плазме крови
+           </td>
+           <td>
+            889
+           </td>
+           <td>
+            пмоль/л
+           </td>
+           <td>
+            298 - 2350
+           </td>
+           <td>
+            30.11.2021:21:00
+           </td>
+          </tr>
+          <tr>
+           <td>
+            С-пептид, массовая концентрация в сыворотке или плазме крови
+           </td>
+           <td>
+            2167
+           </td>
+           <td>
+            пмоль/л
+           </td>
+           <td>
+            298 - 2350
+           </td>
+           <td>
+            30.11.2021:21:00
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </text>
+       <entry>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+         <statusCode code="completed"/>
+         <reference typeCode="REFR">
+          <externalDocument>
+           <id extension="Данные скрыты" root="1.2.643.5.1.13.13.12.2.77.8481.100.1.1.51"/>
+          </externalDocument>
+         </reference>
+         <component>
+          <organizer classCode="BATTERY" moodCode="EVN">
+           <code>
+            <originalText>
+             Исследование уровня гликированного гемоглобина в крови
+            </originalText>
+           </code>
+           <statusCode code="completed"/>
+           <component>
+            <observation classCode="OBS" moodCode="EVN">
+             <code code="1003854" codeSystem="1.2.643.5.1.13.13.11.1080" codeSystemName="Федеральный справочник лабораторных исследований. Справочник лабораторных тестов" codeSystemVersion="3.40" displayName="Гемоглобин гликированный, фракция общего гемоглобина в крови методом высокоэффективной жидкостной хроматографии"/>
+             <statusCode code="completed"/>
+             <effectiveTime value="202101312100"/>
+             <value unit="%" value="8.6" xsi:type="PQ"/>
+             <specimen>
+              <specimenRole>
+               <id extension="124562156" root="1.2.643.5.1.13.13.12.2.77.8481.100.1.1.66"/>
+               <specimenPlayingEntity classCode="ENT" determinerCode="INSTANCE">
+                <code code="108" codeSystem="1.2.643.5.1.13.13.11.1081" codeSystemName="Федеральный справочник лабораторных исследований. Справочник лабораторных материалов и образцов" codeSystemVersion="3.1" displayName="Кровь венозная"/>
+                <desc>
+                 Кровь венозная
+                </desc>
+               </specimenPlayingEntity>
+              </specimenRole>
+             </specimen>
+             <entryRelationship inversionInd="false" typeCode="REFR">
+              <act classCode="ACT" moodCode="EVN">
+               <code code="A09.05.083" codeSystem="1.2.643.5.1.13.13.11.1070" codeSystemName="Номенклатура медицинских услуг" codeSystemVersion="2.10" displayName="Исследование уровня гликированного гемоглобина в крови"/>
+               <effectiveTime value="202101312100"/>
+              </act>
+             </entryRelationship>
+            </observation>
+           </component>
+          </organizer>
+         </component>
+        </organizer>
+       </entry>
+       <entry>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+         <statusCode code="completed"/>
+         <reference typeCode="REFR">
+          <externalDocument>
+           <id extension="Данные скрыты" root="1.2.643.5.1.13.13.12.2.77.8481.100.1.1.51"/>
+          </externalDocument>
+         </reference>
+         <component>
+          <organizer classCode="BATTERY" moodCode="EVN">
+           <code>
+            <originalText>
+             Исследование уровня C-пептида в крови
+            </originalText>
+           </code>
+           <statusCode code="completed"/>
+           <component>
+            <observation classCode="OBS" moodCode="EVN">
+             <code code="1013275" codeSystem="1.2.643.5.1.13.13.11.1080" codeSystemName="Федеральный справочник лабораторных исследований. Справочник лабораторных тестов" codeSystemVersion="3.40" displayName="С-пептид, массовая концентрация в сыворотке или плазме крови"/>
+             <statusCode code="completed"/>
+             <effectiveTime value="202111302100"/>
+             <value unit="пмоль/л" value="889" xsi:type="PQ"/>
+             <interpretationCode code="N"/>
+             <specimen>
+              <specimenRole>
+               <id extension="124562156" root="1.2.643.5.1.13.13.12.2.77.8481.100.1.1.66"/>
+               <specimenPlayingEntity classCode="ENT" determinerCode="INSTANCE">
+                <code code="208" codeSystem="1.2.643.5.1.13.13.11.1081" codeSystemName="Федеральный справочник лабораторных исследований. Справочник лабораторных материалов и образцов" codeSystemVersion="3.1" displayName="Сыворотка крови"/>
+                <desc>
+                 Сыворотка крови
+                </desc>
+               </specimenPlayingEntity>
+              </specimenRole>
+             </specimen>
+             <referenceRange>
+              <observationRange>
+               <value xsi:type="IVL_PQ">
+                <low unit="пмоль/л" value="298"/>
+                <high unit="пмоль/л" value="2350"/>
+               </value>
+               <interpretationCode code="N"/>
+              </observationRange>
+             </referenceRange>
+             <entryRelationship inversionInd="false" typeCode="REFR">
+              <act classCode="ACT" moodCode="EVN">
+               <code code="A09.05.205" codeSystem="1.2.643.5.1.13.13.11.1070" codeSystemName="Номенклатура медицинских услуг" codeSystemVersion="2.10" displayName="Исследование уровня C-пептида в крови"/>
+               <effectiveTime value="202111302100"/>
+              </act>
+             </entryRelationship>
+            </observation>
+           </component>
+           <component>
+            <observation classCode="OBS" moodCode="EVN">
+             <code code="1013275" codeSystem="1.2.643.5.1.13.13.11.1080" codeSystemName="Федеральный справочник лабораторных исследований. Справочник лабораторных тестов" codeSystemVersion="3.40" displayName="С-пептид, массовая концентрация в сыворотке или плазме крови"/>
+             <statusCode code="completed"/>
+             <effectiveTime value="202111302100"/>
+             <value unit="пмоль/л" value="2167" xsi:type="PQ"/>
+             <interpretationCode code="N"/>
+             <specimen>
+              <specimenRole>
+               <id extension="124562156" root="1.2.643.5.1.13.13.12.2.77.8481.100.1.1.66"/>
+               <specimenPlayingEntity classCode="ENT" determinerCode="INSTANCE">
+                <code code="208" codeSystem="1.2.643.5.1.13.13.11.1081" codeSystemName="Федеральный справочник лабораторных исследований. Справочник лабораторных материалов и образцов" codeSystemVersion="3.1" displayName="Сыворотка крови"/>
+                <desc>
+                 Сыворотка крови
+                </desc>
+               </specimenPlayingEntity>
+              </specimenRole>
+             </specimen>
+             <referenceRange>
+              <observationRange>
+               <value xsi:type="IVL_PQ">
+                <low unit="пмоль/л" value="298"/>
+                <high unit="пмоль/л" value="2350"/>
+               </value>
+               <interpretationCode code="N"/>
+              </observationRange>
+             </referenceRange>
+             <entryRelationship inversionInd="false" typeCode="REFR">
+              <act classCode="ACT" moodCode="EVN">
+               <code code="A09.05.205" codeSystem="1.2.643.5.1.13.13.11.1070" codeSystemName="Номенклатура медицинских услуг" codeSystemVersion="2.10" displayName="Исследование уровня C-пептида в крови"/>
+               <effectiveTime value="202111302100"/>
+              </act>
+             </entryRelationship>
+            </observation>
+           </component>
+          </organizer>
+         </component>
+        </organizer>
+       </entry>
+      </section>
+     </component>
+     <!-- [1..1] СЕКЦИЯ_9/3: РЕЗУЛЬТАТЫ МОРФОЛОГИЧЕСКИХ ИСССЛЕДОВАНИЙ  -->
+     <!-- [1..1] СЕКЦИЯ_9/4: КОНСУЛЬТАЦИИ ВРАЧЕЙ СПЕЦИАЛИСТОВ -->
+    </section>
+   </component>
+  </structuredBody>
+ </component>
+</ClinicalDocument>
