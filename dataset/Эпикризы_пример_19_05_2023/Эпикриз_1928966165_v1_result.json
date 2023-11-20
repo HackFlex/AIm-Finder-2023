@@ -1,1 +1,20 @@
-[{"id":"hVRGvP3ppjQBTNWNbwSji","end":66,"code":"","name":"Изменения в легких выявлены на КТ ОГК","start":29,"xPath":"/ClinicalDocument/component/structuredBody/component[2]/section/text","decorCode":"symptom"},{"id":"wKH6Pm8JYeWRCWMgrUYrU","end":156,"code":"","name":"выявления округлого образования в левом легком","start":110,"xPath":"/ClinicalDocument/component/structuredBody/component[2]/section/text","decorCode":"symptom"}]
+[
+  {
+    "id": "hVRGvP3ppjQBTNWNbwSji",
+    "end": 66,
+    "code": "",
+    "name": "Изменения в легких выявлены на КТ ОГК",
+    "start": 29,
+    "xPath": "/ClinicalDocument/component/structuredBody/component[2]/section/text",
+    "decorCode": "symptom"
+  },
+  {
+    "id": "wKH6Pm8JYeWRCWMgrUYrU",
+    "end": 156,
+    "code": "",
+    "name": "выявления округлого образования в левом легком",
+    "start": 110,
+    "xPath": "/ClinicalDocument/component/structuredBody/component[2]/section/text",
+    "decorCode": "symptom"
+  }
+]

@@ -1,1 +1,92 @@
-[{"id":"TBx7pf2LcEzBVZeJJoZOE","end":68,"code":"","name":"сухой кашель","start":56,"xPath":"/ClinicalDocument/component/structuredBody/component[2]/section/text","decorCode":"symptom"},{"id":"oqYqyr8WXWun2DYtp6H86","end":185,"code":"","name":"выраженное снижение аппетита","start":157,"xPath":"/ClinicalDocument/component/structuredBody/component[2]/section/text","decorCode":"symptom"},{"id":"uzgbk_6tlO-GfqL4pRlbW","end":208,"code":"","name":"снижение веса до 7 кг","start":187,"xPath":"/ClinicalDocument/component/structuredBody/component[2]/section/text","decorCode":"symptom"},{"id":"3qMPZcBSVsP-IDaGQRdWa","end":232,"code":"","name":"боли в области желудка","start":210,"xPath":"/ClinicalDocument/component/structuredBody/component[2]/section/text","decorCode":"symptom"},{"id":"j2VcYfbeZPb5-t6zmxziS","end":307,"code":"","name":"Кашель","start":301,"xPath":"/ClinicalDocument/component/structuredBody/component[2]/section/text","decorCode":"symptom"},{"id":"-tQe5r5BR9YcvI864XtA8","end":318,"code":"","name":"слабость","start":310,"xPath":"/ClinicalDocument/component/structuredBody/component[2]/section/text","decorCode":"symptom"},{"id":"mFfF6wjFrWqTp4cPkzALX","end":359,"code":"","name":"слизистая мокрота","start":342,"xPath":"/ClinicalDocument/component/structuredBody/component[2]/section/text","decorCode":"symptom"},{"id":"R0Ai72sxOAEq7fECqsqpS","end":439,"code":"","name":"выявлены большие изменения обоих легких","start":400,"xPath":"/ClinicalDocument/component/structuredBody/component[2]/section/text","decorCode":"symptom"},{"id":"0ZOyI9oC4XtAFMU_FZ4G8","end":604,"code":"","name":"легочная диссеминация неясного генеза,","start":566,"xPath":"/ClinicalDocument/component/structuredBody/component[2]/section/text","decorCode":"symptom"},{"id":"HWwh5dcBFG0Ki2-y9sA2I","end":789,"code":"","name":"кровохарканье (откашляла алую кровь до 50мл).","start":744,"xPath":"/ClinicalDocument/component/structuredBody/component[2]/section/text","decorCode":"symptom"}]
+[
+  {
+    "id": "TBx7pf2LcEzBVZeJJoZOE",
+    "end": 68,
+    "code": "",
+    "name": "сухой кашель",
+    "start": 56,
+    "xPath": "/ClinicalDocument/component/structuredBody/component[2]/section/text",
+    "decorCode": "symptom"
+  },
+  {
+    "id": "oqYqyr8WXWun2DYtp6H86",
+    "end": 185,
+    "code": "",
+    "name": "выраженное снижение аппетита",
+    "start": 157,
+    "xPath": "/ClinicalDocument/component/structuredBody/component[2]/section/text",
+    "decorCode": "symptom"
+  },
+  {
+    "id": "uzgbk_6tlO-GfqL4pRlbW",
+    "end": 208,
+    "code": "",
+    "name": "снижение веса до 7 кг",
+    "start": 187,
+    "xPath": "/ClinicalDocument/component/structuredBody/component[2]/section/text",
+    "decorCode": "symptom"
+  },
+  {
+    "id": "3qMPZcBSVsP-IDaGQRdWa",
+    "end": 232,
+    "code": "",
+    "name": "боли в области желудка",
+    "start": 210,
+    "xPath": "/ClinicalDocument/component/structuredBody/component[2]/section/text",
+    "decorCode": "symptom"
+  },
+  {
+    "id": "j2VcYfbeZPb5-t6zmxziS",
+    "end": 307,
+    "code": "",
+    "name": "Кашель",
+    "start": 301,
+    "xPath": "/ClinicalDocument/component/structuredBody/component[2]/section/text",
+    "decorCode": "symptom"
+  },
+  {
+    "id": "-tQe5r5BR9YcvI864XtA8",
+    "end": 318,
+    "code": "",
+    "name": "слабость",
+    "start": 310,
+    "xPath": "/ClinicalDocument/component/structuredBody/component[2]/section/text",
+    "decorCode": "symptom"
+  },
+  {
+    "id": "mFfF6wjFrWqTp4cPkzALX",
+    "end": 359,
+    "code": "",
+    "name": "слизистая мокрота",
+    "start": 342,
+    "xPath": "/ClinicalDocument/component/structuredBody/component[2]/section/text",
+    "decorCode": "symptom"
+  },
+  {
+    "id": "R0Ai72sxOAEq7fECqsqpS",
+    "end": 439,
+    "code": "",
+    "name": "выявлены большие изменения обоих легких",
+    "start": 400,
+    "xPath": "/ClinicalDocument/component/structuredBody/component[2]/section/text",
+    "decorCode": "symptom"
+  },
+  {
+    "id": "0ZOyI9oC4XtAFMU_FZ4G8",
+    "end": 604,
+    "code": "",
+    "name": "легочная диссеминация неясного генеза,",
+    "start": 566,
+    "xPath": "/ClinicalDocument/component/structuredBody/component[2]/section/text",
+    "decorCode": "symptom"
+  },
+  {
+    "id": "HWwh5dcBFG0Ki2-y9sA2I",
+    "end": 789,
+    "code": "",
+    "name": "кровохарканье (откашляла алую кровь до 50мл).",
+    "start": 744,
+    "xPath": "/ClinicalDocument/component/structuredBody/component[2]/section/text",
+    "decorCode": "symptom"
+  }
+]
