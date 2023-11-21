@@ -20,6 +20,9 @@
 Был развернут сервис [label-studio](https://labelstud.io/), 3 практикующих врача разметили 140 эпикризов.
 Данные выделены в [обучающий](https://huggingface.co/datasets/kosta-naumenko/medflex) и [тестовый](https://huggingface.co/datasets/kosta-naumenko/medflex-test) наборы.
 
+![image](pics/label-studio-0.png)
+![image](pics/label-studio-1.png)
+
 ### 2. Обучение нейросети
 В основу экспериментов положен [туториал по NER](https://huggingface.co/learn/nlp-course/chapter7/2), логирование осуществлялось в [mlflow](https://mlflow.org/).
 Были проведены эксперименты по дообучению языковой модели [RuBioRoBERTa](https://huggingface.co/alexyalunin/RuBioRoBERTa).
@@ -29,6 +32,11 @@
 2)  Дообучение модели с помощью [LoRA](/notebooks/experiments/Lora_finetune.ipynb) 
 
 3) Дообучение модели c помощью LoRA на задаче [MLM](/notebooks/experiments/Lora_MLM.ipynb), а затем на задаче [классификации](/notebooks/experiments/Lora_finetune_from_MLM.ipynb). Для MLM был надйен другой датасет с анамнезами заболеваний ~ 14 000 примеров.
+
+![Некоторые эксперименты](pics/mlflow-0.png "Некоторые эксперименты")
+<p align="center">
+  <img src="pics/mlflow-1.png" alt="Некоторые эксперименты"/>
+</p>
 
 ### 3. Постобработка
 Выход модели может содержать части слов, ненужные символы или явно неправильные примеры, поэтому постобработка содержит множество эвристик, которые были придуманы в конце конкурса.
